@@ -80,6 +80,12 @@ class ConfirmationTests(unittest.IsolatedAsyncioTestCase):
         self.assertIn('结果未知',result)
         self.assertNotIn('未保存',result)
 
+    def test_preference_and_save_wording_enter_real_confirmation(self):
+        for text in ('我喜欢天文学','我现在喜欢天文学','好，那存进去，我现在喜欢天文学。','请保存我的偏好，我喜欢天文学'):
+            with self.subTest(text=text): self.assertTrue(module.wants_memory(text))
+        for text in ('我喜欢什么？','我现在喜欢什么','我喜欢天文学吗？','不要保存我喜欢天文学','别存我喜欢什么'):
+            with self.subTest(text=text): self.assertFalse(module.wants_memory(text))
+
     def test_negative_and_plain_chat_do_not_propose(self):
         for text in ('你好','不要记住我的名字','不用记我说的','别记住这个','我叫什么？','我叫啥'):
             self.assertFalse(module.wants_memory(text))

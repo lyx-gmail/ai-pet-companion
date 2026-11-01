@@ -1,0 +1,13 @@
+{
+  "source": "computer_speaker_to_device_ASR_preference_and_USB_cancel",
+  "fixture_phrase": "我现在喜欢天文学。",
+  "hardware_ASR_preference_observed": true,
+  "real_preference_confirmation_prompt": true,
+  "device_cancel_dispatched": true,
+  "confirmation_closed": true,
+  "profile_revision_unchanged": true,
+  "physical_switch_contact_verified": false,
+  "human_audible_prompt_verified": false,
+  "firmware_reflashed": false,
+  "ok": true
+}

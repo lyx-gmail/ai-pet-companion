@@ -6,9 +6,13 @@ import time
 
 
 def wants_memory(text):
-    return (isinstance(text,str) and len(text.encode('utf-8'))<=2000
-            and bool(re.search(r'记住|记一下|叫我|称呼我|我叫(?!什么|啥|谁)',text))
-            and not re.search(r'不要记|不用记|别记',text))
+    if not isinstance(text,str) or len(text.encode('utf-8'))>2000:
+        return False
+    if re.search(r'(?:不要|不用|别)(?:记|存|保存)',text):
+        return False
+    explicit=re.search(r'记住|记一下|记下来|存进去|保存|叫我|称呼我|我叫(?!什么|啥|谁)',text)
+    preference=re.search(r'我(?:现在|最近|一直|最)?喜欢(?!什么|啥|谁|哪|吗)[^，。！？?\s]',text)
+    return bool(explicit or (preference and not re.search(r'[？?]|吗[。！!]?$',text)))
 
 
 async def confirm_memory(query,request,call,is_current,*,poll_seconds=.5,timeout=24,announce=None):
@@ -18,7 +22,7 @@ async def confirm_memory(query,request,call,is_current,*,poll_seconds=.5,timeout
     try:
         if not is_current(): return '本轮已结束，记忆未保存。'
         draft=await asyncio.to_thread(request,'remember',{'message':query})
-        if draft.get('status')=='NO_PROPOSAL': return ''
+        if draft.get('status')=='NO_PROPOSAL': return '本轮未提取到可保存资料，未创建按键确认。请明确说出要保存的称呼或偏好。'
         token=draft['id']
         # Do not turn arbitrary experience text into a tiny ambiguous confirmation.
         if (draft.get('status')!='PENDING' or draft.get('field') not in

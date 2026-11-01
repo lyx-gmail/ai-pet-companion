@@ -113,7 +113,9 @@ class MemoryProvider(MemoryProviderBase):
                     self.confirming=False
         if not current(): return ''
         context=await self._query_snapshot(query,current)
-        return outcome+'\n'+context if current() else ''
+        result=outcome or '本轮未创建新的记忆草稿。'
+        result+='记忆确认流程由程序处理，已不在等待按键；不要再要求用户按中键保存，只报告实际结果。'
+        return result+'\n'+context if current() else ''
 
     async def _query_snapshot(self, query, current):
         if not self.role_id: return '记忆服务尚未绑定设备。不要猜测用户的称呼或偏好。'
