@@ -1,0 +1,55 @@
+{
+  "speed": 1,
+  "audio": "original recording",
+  "footage": "separate recorded takes",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "全屏动态表情",
+      "source": "45daeceb44e35e428ed4a10c4878d7b4_raw.mp4",
+      "source_start_seconds": 0.5,
+      "source_duration_seconds": 6,
+      "demo_start_seconds": 0
+    },
+    {
+      "chapter": 2,
+      "title": "按键喂食与抚摸",
+      "source": "a2321910ca4dde5f236bc07d92f47197_raw.mp4",
+      "source_start_seconds": 0,
+      "source_duration_seconds": 15.8,
+      "demo_start_seconds": 6
+    },
+    {
+      "chapter": 3,
+      "title": "睡眠与唤醒",
+      "source": "23ad3b51f2d7ce24b9021389dad295d1_raw.mp4",
+      "source_start_seconds": 0,
+      "source_duration_seconds": 17.3,
+      "demo_start_seconds": 21.8
+    },
+    {
+      "chapter": 4,
+      "title": "AI 语音查询真实状态",
+      "source": "973dbe14bfda96e4a9cc8d6563a0da75_raw.mp4",
+      "source_start_seconds": 0,
+      "source_duration_seconds": 16.43,
+      "demo_start_seconds": 39.1
+    },
+    {
+      "chapter": 5,
+      "title": "记住称呼与喜好 · 按键确认",
+      "source": "51a88f0ae125360b514534d751fcc79d_raw.mp4",
+      "source_start_seconds": 12,
+      "source_duration_seconds": 31.43,
+      "demo_start_seconds": 55.53
+    },
+    {
+      "chapter": 6,
+      "title": "更正喜好 · 再次确认",
+      "source": "e11c5057bb194e72dce59154f6c86a0b_raw.mp4",
+      "source_start_seconds": 0,
+      "source_duration_seconds": 26.25,
+      "demo_start_seconds": 86.96
+    }
+  ]
+}
