@@ -1,0 +1,20 @@
+{
+  "source": "current_physical_device_fixed_protocol_query",
+  "app_sha256": "cb5efaa25c52fb18c0d8827c05862d59a8820c4466afb18a32d5536f890f7d15",
+  "elapsed_seconds": 11.06,
+  "text_accepted": true,
+  "device_states": [
+    "connecting",
+    "listening",
+    "speaking",
+    "listening",
+    "idle"
+  ],
+  "state_tool_result_observed": true,
+  "tts_or_audio_log_events": 5,
+  "device_crash_observed": false,
+  "hardware_microphone_verified": false,
+  "human_audible_playback_verified": false,
+  "scope": "Fixed USB diagnostic text bypasses microphone and ASR. Device states and server events do not prove audible output or final visual quality.",
+  "ok": true
+}
