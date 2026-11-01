@@ -14,6 +14,7 @@ public:
     void ShowSystemPage(bool visible);
     void ShowMenu(const std::string& text);
     void HideMenu();
+    void SetMemoryConfirmation(bool waiting,bool saving = false);
     void SetPetState(const PetState& state);
     void PlayCare(bool success,bool petting,bool from_voice = false);
 private:

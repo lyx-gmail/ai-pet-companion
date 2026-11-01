@@ -444,7 +444,9 @@ void PetRuntime::HandleKey(PetMenu::Key key,bool held) {
     RefreshMemory();
     if (memory_page_) {
         if (held || key==PetMenu::Key::Main || key==PetMenu::Key::Pet) {
-            memory_.Decide(!held && key==PetMenu::Key::Main,app.PetVoiceEpoch(),Second());
+            const bool confirmed=!held && key==PetMenu::Key::Main;
+            memory_.Decide(confirmed,app.PetVoiceEpoch(),Second());
+            display_->SetMemoryConfirmation(false,confirmed);
             memory_page_=false;
             display_->HideMenu();
         }
@@ -506,6 +508,7 @@ void PetRuntime::RefreshMemory() {
     memory_.Refresh(Application::GetInstance().PetVoiceEpoch(),Second());
     if (memory_page_ && !memory_.pending()) {
         memory_page_=false;
+        display_->SetMemoryConfirmation(false);
         display_->HideMenu();
     }
 }
@@ -518,6 +521,7 @@ cJSON* PetRuntime::MemoryOffer(const std::string& id,const std::string& label) {
     if (valid && storage_ok_ && !menu_.active() && !snapshot_.state.sleeping && !sleep_.pending &&
         app.PetMemoryAllowed() && memory_.Offer(id.c_str(),app.PetVoiceEpoch(),Second())) {
         memory_page_=true;
+        display_->SetMemoryConfirmation(true);
         display_->HideMenu(); // Confirmation is spoken; keep the full-screen eyes visible.
         return MemoryStatus(id);
     }

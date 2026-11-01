@@ -4,6 +4,8 @@
   "pristine_patch": true,
   "idempotent": true,
   "files": {
+    "core/providers/tts/base.py": "9045d6a7e0dfbf42cd4e00fe4dc7455da60a96be8e1ef428322f4243cec6ea29",
+    "core/providers/tts/edge.py": "6c27956be86edca8c8408a55c851f6285f04a28a5d29b31b68aa9db6e276b421",
     "core/connection.py": "7f78f5cd97dcead11459d6d76df0a4622b1025f42afc513bbbae4ce3f2f8aaa2",
     "core/utils/dialogue.py": "fe6511a079e04ed61c17d02df45baf0c278d19ea3609f7f91151eca4dcb609ec",
     "core/providers/tools/unified_tool_handler.py": "5025af1aaf9eaf8ef4ab94c0e683a031a14580c67df8b5798d6737d84629ee25",

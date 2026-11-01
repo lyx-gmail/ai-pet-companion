@@ -1,0 +1,12 @@
+{
+  "source": "actual_patched_tts_method_with_blocking_async_substitute",
+  "attempts": 2,
+  "cancelled_attempts": 2,
+  "test_timeout_seconds": 0.025,
+  "observed_seconds": 0.078,
+  "configured_tts_rate_percent": 25,
+  "configured_tts_attempt_timeout_seconds": 12,
+  "configured_vad_silence_ms": 600,
+  "ok": true,
+  "cloud_API_called": false
+}

@@ -2,6 +2,8 @@
 // This file and its linked RoboEyes firmware module are GPL-3.0-or-later.
 #include "pet_display.h"
 #include "device_state_event.h"
+#include "application.h"
+#include <esp_log.h>
 #include <esp_timer.h>
 #include <esp_random.h>
 #include <array>
@@ -24,6 +26,10 @@ struct PetDisplay::Eyes {
     DeviceState state = kDeviceStateStarting;
     bool system_page = false;
     bool sleeping = false;
+    bool thinking = false;
+    bool memory_waiting = false;
+    int64_t saving_until = 0;
+    int face = -1;
     bool eyes_closed = false;
     uint8_t base_mood = DEFAULT;
     uint8_t voice_mood = DEFAULT;
@@ -82,11 +88,28 @@ struct PetDisplay::Eyes {
             else engine.open();
             if (timer) lv_timer_set_period(timer,sleep_face ? 100 : 33);
         }
-        engine.setIdleMode(state==kDeviceStateIdle && !sleep_face && now>=action_until,4,4);
-        engine.setCuriosity(state==kDeviceStateListening);
+        if (thinking && state==kDeviceStateSpeaking &&
+            !Application::GetInstance().GetAudioService().IsPetPlaybackDrained()) thinking=false;
+        // Phases: idle, listening, thinking, memory confirmation, saving, speaking, sleep.
+        const int next = sleep_face ? 6 : memory_waiting ? 3 : now<saving_until ? 4 :
+            thinking ? 2 : state==kDeviceStateListening ? 1 : state==kDeviceStateSpeaking ? 5 : 0;
+        if (next!=face) {
+            face=next;
+            ESP_LOGI("PetFace","phase=%d",face);
+            engine.setWidth(face==1 ? 82 : 78,face==1 ? 82 : 78);
+            engine.setHeight(face==1 ? 104 : face==2 ? 46 : face==3 ? 100 : face==4 ? 18 : 88,
+                             face==1 ? 104 : face==2 ? 58 : face==3 ? 66 : face==4 ? 18 : 88);
+            if (face==6) engine.close();
+            engine.setPosition(DEFAULT);
+            engine.setAutoblinker(face!=4 && !sleep_face,face==3 ? 2 : 4,2);
+        }
+        if (face==2) engine.setPosition((now/1600000)%2 ? NE : NW);
+        engine.setIdleMode(face==0 && now>=action_until,4,4);
+        engine.setCuriosity(face==1);
         uint8_t mood = base_mood;
         if (state==kDeviceStateSpeaking && now<voice_until) mood = voice_mood;
         if ((state==kDeviceStateIdle || state==kDeviceStateListening) && now<action_until) mood = action_mood;
+        if (face>=1 && face<=4) mood = DEFAULT;
         if (sleep_face) mood = TIRED;
         engine.setMood(mood);
     }
@@ -165,9 +188,18 @@ void PetDisplay::HideMenu() {
     eyes_->Visibility();
 }
 
+void PetDisplay::SetMemoryConfirmation(bool waiting,bool saving) {
+    DisplayLockGuard lock(this);
+    eyes_->memory_waiting=waiting;
+    eyes_->saving_until=saving ? esp_timer_get_time()+1200000 : 0;
+    if (saving) eyes_->thinking=true;
+    eyes_->Resolve();
+}
+
 void PetDisplay::OnState(DeviceState state) {
     DisplayLockGuard lock(this);
     eyes_->state = state;
+    if (state==kDeviceStateIdle || state==kDeviceStateListening || state==kDeviceStateConnecting) eyes_->thinking=false;
     if (state!=kDeviceStateIdle) {
         eyes_->action_until = 0;
         eyes_->engine.laugh = false;
@@ -223,4 +255,9 @@ void PetDisplay::SetChatMessage(const char* role,const char* content) {
     // Keep the original text model available for explicit system/diagnostic pages.
     // The opaque face covers it in pet mode, including asynchronous notifications.
     SpiLcdDisplay::SetChatMessage(role,content);
+    if (role && content && *content && !strcmp(role,"user")) {
+        DisplayLockGuard lock(this);
+        eyes_->thinking=true;
+        eyes_->Resolve();
+    }
 }

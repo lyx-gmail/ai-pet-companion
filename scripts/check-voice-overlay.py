@@ -9,7 +9,7 @@ from voice_pet_patch import apply
 ROOT = Path(__file__).resolve().parents[1]
 UPSTREAM = ROOT/'.tools/upstream/xiaozhi-esp32-server'
 PIN = '1a095d5bed23e49a17f817c7f378e2a86f298dfc'
-FILES = ['core/connection.py','core/utils/dialogue.py','core/providers/tools/unified_tool_handler.py',
+FILES = ['core/providers/tts/base.py','core/providers/tts/edge.py','core/connection.py','core/utils/dialogue.py','core/providers/tools/unified_tool_handler.py',
          'core/providers/tools/device_mcp/mcp_handler.py',
          'core/websocket_server.py','core/api/ota_handler.py',
          'plugins_func/loadplugins.py','core/utils/util.py','core/providers/tools/device_mcp/mcp_executor.py',

@@ -4,6 +4,19 @@ import shutil
 
 
 def apply(root,server,replace):
+    tts=server/'core/providers/tts/base.py'
+    text=tts.read_text(encoding='utf-8')
+    if 'self.tts_timeout =' not in text:
+        text=text.replace('        self.delete_audio_file = delete_audio_file',
+                          '        self.tts_timeout = float(config.get("tts_timeout", 12))\n        self.delete_audio_file = delete_audio_file')
+    text=text.replace('max_repeat_time = 5','max_repeat_time = 2').replace('5 - max_repeat_time','2 - max_repeat_time')
+    for target in ('None','tmp_file'):
+        text=text.replace(f'asyncio.run(self.text_to_speak(text, {target}))',
+                          f'asyncio.run(asyncio.wait_for(self.text_to_speak(text, {target}), timeout=self.tts_timeout))')
+    tts.write_text(text,encoding='utf-8',newline='\n')
+    edge=server/'core/providers/tts/edge.py'
+    replace(edge,'                pitch=self.edge_pitch,',
+            '                pitch=self.edge_pitch,\n                connect_timeout=5, receive_timeout=10,')
     replace(server/'core/utils/dialogue.py',r'''                full_prompt = re.sub(
                     r"<memory>.*?</memory>",
                     f"<memory>\n{memory_str}\n</memory>",

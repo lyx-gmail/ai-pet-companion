@@ -9,12 +9,12 @@
   "pet_snapshot_bytes": 92,
   "date": "2026-11-01",
   "build_passed": true,
-  "app_bytes": 2743184,
-  "app_sha256": "a91208e6f3c617b04d8efc342b2bc801071dc42de8f6a6336c0aeef536884507",
+  "app_bytes": 2743952,
+  "app_sha256": "61fc07266d5d65779d0c063428f1d96bdcecb9edf65f919e52458753f59df4cf",
   "flashed": true,
   "hardware_animation_verified": false,
   "hardware_audio_verified": false,
-  "hardware_boot_smoke_verified": true,
+  "hardware_boot_smoke_verified": false,
   "app_readback_verified": true,
   "protected_regions_verified": true,
   "pet_conversation_compile_time_check_groups": 3,
@@ -49,9 +49,10 @@
     "development-only fixed 20-second radio pause with independent restore task and driver connection readout",
     "nonfatal driver snapshots for offline board information, network icon and device-status JSON",
     "voice-only memory confirmation keeps full-screen eyes visible",
-    "closing settings or memory overlays restores eye-layer visibility"
+    "closing settings or memory overlays restores eye-layer visibility",
+    "distinct full-screen listening, thinking, memory confirmation and saving feedback faces"
   ],
-  "limits": "App-only write/readback and protected regions verified; 30s health/storage passed. Actual device radio stopped for 20000ms: voice returned idle in 0.437s without observed crash/reboot; full-mood pet had no reward/cooldown, sleep/wake persisted, feed key woke without feeding; Wi-Fi and voice reconnected. Two-hour combined observation currently running, not passed. Not a physical AP outage, switch-contact, ASR or acoustic/visual acceptance.",
+  "limits": "Current image app-only write/readback and protected regions verified. Actual microphone probe observed listening, thinking, speaking and memory-confirmation phases; ASR to reply audio queue was 2.73s. Test memory was cancelled. Saving feedback is wired to confirmation key dispatch; visual appearance, human-audible latency and extended runtime have not been verified for this image.",
   "pet_memory_menu_compile_time_check_groups": 3,
   "hardware_audio_queue_cancel_verified": false,
   "pet_checkpoint_schema_version": 4,
@@ -60,7 +61,7 @@
   "pet_checkpoint_compile_time_check_groups": 5,
   "hardware_delayed_clock_verified": false,
   "hardware_two_hour_runtime_observed": false,
-  "two_hour_scope": "Not observed for the voice-only memory confirmation image.",
+  "two_hour_scope": "Not observed for distinct voice and memory face image.",
   "hardware_backend_offline_verified": false,
   "hardware_wifi_fault_verified": false
 }

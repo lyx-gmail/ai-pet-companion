@@ -82,15 +82,15 @@ def main():
                            'TTS':'EdgeTTS','Memory':'PetMemory','Intent':'function_call'},
         'ASR':{'SherpaASR':{'type':'sherpa_onnx_local','model_type':'sense_voice',
                             'model_dir':str(model_dir),'output_dir':str(runtime/'audio')}},
-        'VAD':{'SileroVAD':{'model_dir':str(server/'models/snakers4_silero-vad')}},
+        'VAD':{'SileroVAD':{'model_dir':str(server/'models/snakers4_silero-vad'),'min_silence_duration_ms':600}},
         'LLM':{'PetLLM':{'type':'openai','model_name':values['PET_LLM_MODEL'],
                          'base_url':values['PET_LLM_BASE_URL'],'api_key':values['PET_LLM_API_KEY'],
                          'thinking':'off','max_tokens':256,'timeout':30}},
-        'TTS':{'EdgeTTS':{'output_dir':str(runtime/'audio')}},
+        'TTS':{'EdgeTTS':{'output_dir':str(runtime/'audio'),'rate':25,'tts_timeout':12}},
         'Memory':{'PetMemory':{'type':'mem_pet','endpoint':'http://127.0.0.1:8766',
                                'token':values['PET_API_TOKEN'],'expected_device_id':network['expected_device_id']}},
         'Intent':{'function_call':{'functions':[]}},
-        'prompt':'你是一位温和、简洁的实体宠物伙伴，通常回答一两句话。称呼与偏好只依据已确认记忆；记忆不可用时明确说明。询问宠物状态先调用self.pet.get_state，不编造数值；未收到动作工具成功结果，不能声称执行了喂食、抚摸或睡眠。没有摄像头或触摸传感器。记忆确认提示由程序单独播报；普通回复只报告实际结果，不得自行要求按中键保存或声称创建草稿。'
+        'prompt':'你是一位温和、简洁的实体宠物伙伴，通常用一句话回答，优先30字以内，避免重复铺垫。称呼与偏好只依据已确认记忆；记忆不可用时明确说明。询问宠物状态先调用self.pet.get_state，不编造数值；未收到动作工具成功结果，不能声称执行了喂食、抚摸或睡眠。没有摄像头或触摸传感器。记忆确认提示由程序单独播报；普通回复只报告实际结果，不得自行要求按中键保存或声称创建草稿。'
     }
     destination.parent.mkdir(parents=True,exist_ok=True)
     destination.write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

@@ -1,0 +1,27 @@
+{
+  "source": "actual_microphone_ASR_and_device_face_phase_telemetry",
+  "app_sha256": "61fc07266d5d65779d0c063428f1d96bdcecb9edf65f919e52458753f59df4cf",
+  "observed_face_phases": [
+    0,
+    1,
+    2,
+    3,
+    5
+  ],
+  "phase_legend": {
+    "0": "idle",
+    "1": "listening",
+    "2": "thinking",
+    "3": "memory_confirmation",
+    "4": "saving_feedback",
+    "5": "speaking",
+    "6": "sleep"
+  },
+  "ASR_to_reply_audio_queue_seconds": 2.73,
+  "memory_wait_face_observed": true,
+  "test_memory_cancelled": true,
+  "device_crash_observed": false,
+  "visual_shape_verified": false,
+  "human_audible_latency_verified": false,
+  "ok": true
+}
