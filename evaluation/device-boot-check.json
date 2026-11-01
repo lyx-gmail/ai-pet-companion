@@ -4,30 +4,20 @@
   "observed_pet_runtime": true,
   "health_samples": [
     {
-      "revision": 62369,
-      "satiety": 98,
-      "mood": 100,
-      "energy": 50,
+      "revision": 84350,
+      "satiety": 96,
+      "mood": 99,
+      "energy": 24,
       "closeness": 52,
       "sleeping": 0,
       "sleep_pending": 0,
       "storage_available": 1
     },
     {
-      "revision": 62379,
-      "satiety": 98,
-      "mood": 100,
-      "energy": 50,
-      "closeness": 52,
-      "sleeping": 0,
-      "sleep_pending": 0,
-      "storage_available": 1
-    },
-    {
-      "revision": 62389,
-      "satiety": 98,
-      "mood": 100,
-      "energy": 50,
+      "revision": 84360,
+      "satiety": 96,
+      "mood": 99,
+      "energy": 24,
       "closeness": 52,
       "sleeping": 0,
       "sleep_pending": 0,
@@ -40,6 +30,6 @@
   "hardware_animation_verified": false,
   "hardware_audio_verified": false,
   "ok": true,
-  "capture_seconds": 30,
+  "capture_seconds": 20,
   "serial_reconnects": 0
 }

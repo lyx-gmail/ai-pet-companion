@@ -9,8 +9,8 @@
   "pet_snapshot_bytes": 92,
   "date": "2026-11-01",
   "build_passed": true,
-  "app_bytes": 2743424,
-  "app_sha256": "cb5efaa25c52fb18c0d8827c05862d59a8820c4466afb18a32d5536f890f7d15",
+  "app_bytes": 2743184,
+  "app_sha256": "a91208e6f3c617b04d8efc342b2bc801071dc42de8f6a6336c0aeef536884507",
   "flashed": true,
   "hardware_animation_verified": false,
   "hardware_audio_verified": false,
@@ -47,7 +47,9 @@
     "bounded V4 offline event journal, UTC boot trust gate and legacy rollback handoff",
     "native IDF private LAN discovery bounds socket connection timeout; nonblocking discovery mutex",
     "development-only fixed 20-second radio pause with independent restore task and driver connection readout",
-    "nonfatal driver snapshots for offline board information, network icon and device-status JSON"
+    "nonfatal driver snapshots for offline board information, network icon and device-status JSON",
+    "voice-only memory confirmation keeps full-screen eyes visible",
+    "closing settings or memory overlays restores eye-layer visibility"
   ],
   "limits": "App-only write/readback and protected regions verified; 30s health/storage passed. Actual device radio stopped for 20000ms: voice returned idle in 0.437s without observed crash/reboot; full-mood pet had no reward/cooldown, sleep/wake persisted, feed key woke without feeding; Wi-Fi and voice reconnected. Two-hour combined observation currently running, not passed. Not a physical AP outage, switch-contact, ASR or acoustic/visual acceptance.",
   "pet_memory_menu_compile_time_check_groups": 3,
@@ -58,7 +60,7 @@
   "pet_checkpoint_compile_time_check_groups": 5,
   "hardware_delayed_clock_verified": false,
   "hardware_two_hour_runtime_observed": false,
-  "two_hour_scope": "Existing observation applies to previous 27a4f728 image only; not this build.",
+  "two_hour_scope": "Not observed for the voice-only memory confirmation image.",
   "hardware_backend_offline_verified": false,
-  "hardware_wifi_fault_verified": true
+  "hardware_wifi_fault_verified": false
 }

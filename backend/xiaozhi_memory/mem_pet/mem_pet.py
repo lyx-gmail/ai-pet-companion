@@ -100,7 +100,13 @@ class MemoryProvider(MemoryProviderBase):
                         from core.providers.tools.device_mcp.mcp_handler import call_mcp_tool
                         raw=await call_mcp_tool(conn,conn.mcp_client,name,json.dumps(args,ensure_ascii=False),timeout=3)
                         return parse_device_result(raw)
-                    outcome=await confirm_memory(query,self.client.request,call,current)
+                    async def announce(text):
+                        if not current(): raise MemoryUnavailable('STALE_VOICE_TURN')
+                        from core.providers.tts.dto.dto import TTSMessageDTO, SentenceType, ContentType
+                        conn.tts.tts_text_queue.put(TTSMessageDTO(
+                            sentence_id=sentence, sentence_type=SentenceType.MIDDLE,
+                            content_type=ContentType.TEXT, content_detail=text))
+                    outcome=await confirm_memory(query,self.client.request,call,current,announce=announce)
                     if len(self.handled)>=64: self.handled.clear()
                     self.handled[sentence]=outcome
                 finally:

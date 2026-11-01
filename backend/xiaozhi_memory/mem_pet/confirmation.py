@@ -11,7 +11,7 @@ def wants_memory(text):
             and not re.search(r'不要记|不用记|别记',text))
 
 
-async def confirm_memory(query,request,call,is_current,*,poll_seconds=.5,timeout=24):
+async def confirm_memory(query,request,call,is_current,*,poll_seconds=.5,timeout=24,announce=None):
     draft=None
     committed=False
     commit_attempted=False
@@ -34,6 +34,8 @@ async def confirm_memory(query,request,call,is_current,*,poll_seconds=.5,timeout
         offered=await call('self_pet_memory_offer',{'id':token,'label':label})
         if not offered.get('ok') or offered.get('id')!=token or offered.get('status')!='pending':
             return '设备无法进入记忆确认，未保存。'
+        if announce is not None:
+            await announce(f'想记住{label}。按中键保存，按左键取消。')
         while is_current() and asyncio.get_running_loop().time()<deadline:
             decision=await call('self_pet_memory_status',{'id':token})
             if not is_current(): break

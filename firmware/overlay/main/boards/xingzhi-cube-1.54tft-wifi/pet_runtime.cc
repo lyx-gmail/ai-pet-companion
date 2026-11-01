@@ -518,7 +518,7 @@ cJSON* PetRuntime::MemoryOffer(const std::string& id,const std::string& label) {
     if (valid && storage_ok_ && !menu_.active() && !snapshot_.state.sleeping && !sleep_.pending &&
         app.PetMemoryAllowed() && memory_.Offer(id.c_str(),app.PetVoiceEpoch(),Second())) {
         memory_page_=true;
-        display_->ShowMenu("记忆确认\n\n"+label+"\n\n中键：确认保存\n左键：取消\n30秒后自动取消");
+        display_->HideMenu(); // Confirmation is spoken; keep the full-screen eyes visible.
         return MemoryStatus(id);
     }
     auto* root=cJSON_CreateObject();

@@ -26,6 +26,26 @@ class ConfirmationTests(unittest.IsolatedAsyncioTestCase):
         result=await module.confirm_memory('请记住我叫小林',request,call,current,poll_seconds=0,timeout=.05)
         return result,operations
 
+    async def test_spoken_prompt_precedes_decision_and_commit(self):
+        events=[]
+        token='b82c20fa-467a-4c7d-a9a5-7a5149323411'
+        def request(path,body):
+            events.append(path)
+            if path=='remember': return dict(status='PENDING',id=token,field='name',value='小林',expiresAt=9999999999999)
+            return dict(ok=True)
+        async def call(name,args):
+            events.append(name)
+            return dict(ok=True,id=token,status='pending' if name.endswith('offer') else 'confirmed')
+        async def announce(text):
+            self.assertIn('称呼：小林',text)
+            self.assertIn('按中键保存，按左键取消',text)
+            events.append('spoken_prompt')
+        result=await module.confirm_memory('请记住我叫小林',request,call,lambda:True,announce=announce)
+        self.assertIn('已按键确认',result)
+        self.assertLess(events.index('self_pet_memory_offer'),events.index('spoken_prompt'))
+        self.assertLess(events.index('spoken_prompt'),events.index('self_pet_memory_status'))
+        self.assertEqual(events[-1],'confirm')
+
     async def test_only_matching_device_confirmation_commits(self):
         result,ops=await self.run_case(['pending','confirmed'])
         self.assertIn('已按键确认',result)

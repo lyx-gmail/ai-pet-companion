@@ -1,0 +1,13 @@
+{
+  "source": "actual_device_fixed_diagnostic_text_and_USB_cancel",
+  "app_sha256": "a91208e6f3c617b04d8efc342b2bc801071dc42de8f6a6336c0aeef536884507",
+  "confirmation_voice_prompt_observed": true,
+  "device_cancel_dispatched": true,
+  "confirmation_closed": true,
+  "profile_revision_unchanged": true,
+  "device_crash_observed": false,
+  "visual_screen_verified": false,
+  "physical_switch_contact_verified": false,
+  "human_audible_prompt_verified": false,
+  "ok": true
+}

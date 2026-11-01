@@ -161,6 +161,8 @@ void PetDisplay::ShowMenu(const std::string& text) {
 void PetDisplay::HideMenu() {
     DisplayLockGuard lock(this);
     if (menu_) lv_obj_add_flag(menu_,LV_OBJ_FLAG_HIDDEN);
+    eyes_->system_page = false;
+    eyes_->Visibility();
 }
 
 void PetDisplay::OnState(DeviceState state) {
