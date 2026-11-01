@@ -1,0 +1,13 @@
+{
+  "source": "user_final_overall_acceptance",
+  "accepted_statement": "整体可用，先作为第一版展示",
+  "scope": "First-version overall experience accepted by the user after final review request covering care keys, speaking/listening and fullscreen eyes. Not a measured performance benchmark or per-case certification.",
+  "accepted_for_first_version_showcase": true,
+  "remaining_followups": [
+    "physical demonstration video",
+    "broader multi-round performance evaluation",
+    "current-image two-hour observation"
+  ],
+  "firmware_app_sha256": "cb5efaa25c52fb18c0d8827c05862d59a8820c4466afb18a32d5536f890f7d15",
+  "release_tag": "v0.1.0-preview"
+}
