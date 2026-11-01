@@ -1,0 +1,15 @@
+.tools/
+device/backups/
+device/private-logs/
+.env
+.env.*
+!.env.example
+node_modules/
+.runtime/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+__pycache__/

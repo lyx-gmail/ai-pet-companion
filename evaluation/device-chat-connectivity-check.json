@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "app_sha256": "e99a137226a6f431ecabe028cbd4b4ab274a57ff6511246fa9214a7db697b35f",
+  "diagnostic_text_accepted": true,
+  "reply_started": true,
+  "reply_finished": true,
+  "relationship_count_unchanged": true,
+  "hardware_ASR_verified": false,
+  "acoustic_playback_verified": false,
+  "scoring_rejection_verified": false,
+  "connectivity_only": true,
+  "before": {
+    "relationship_interactions": 3,
+    "relationship_window_seconds": 65856,
+    "relationship_spacing_seconds": 600,
+    "sleeping": false
+  },
+  "scoring_eligible_before": false,
+  "after": {
+    "relationship_interactions": 3,
+    "relationship_window_seconds": 65874,
+    "relationship_spacing_seconds": 600,
+    "sleeping": false
+  }
+}

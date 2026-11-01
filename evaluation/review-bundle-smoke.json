@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "scope": "clean_archive_offline_Python_smoke_using_existing_interpreter",
+  "checks": [
+    {
+      "script": "test_review_bundle.py",
+      "ok": true
+    },
+    {
+      "script": "test_device_command.py",
+      "ok": true
+    },
+    {
+      "script": "test_device_boot.py",
+      "ok": true
+    }
+  ],
+  "tested_source_sha256": {
+    "scripts/prepare-review-bundle.py": "7fed6e13afce08d67000cb3b3ad0e0987d175806942b23f04678965aea4ccc71",
+    "scripts/test_review_bundle.py": "7bc8ce73a4721de40c8592a1eba3139325ac656d0ba7a969522c3f2437b0737f",
+    "scripts/device_command.py": "d01ee69e98a84843732e1c99cbb2c76d5ba2632e66edd950466c719fcd0352ba",
+    "scripts/test_device_command.py": "d6018c3f3f3299b2c3665be8f4cf6de00c51ed6bf82c54ce8cebc6e402c51b0d",
+    "scripts/device_boot.py": "59c66def19bf9798b852383d1290d7c76de776049a082fd75e4b212a6e2f3ff6",
+    "scripts/test_device_boot.py": "2ed34dd4653d7655460f71e82454e857925834a5cf8e9fa51a260cf6218f3066"
+  },
+  "dependencies_lock_included": true,
+  "clean_install_verified": false,
+  "API_called": false,
+  "device_accessed": false
+}

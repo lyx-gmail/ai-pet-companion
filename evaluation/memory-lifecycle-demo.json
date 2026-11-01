@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "generatedAt": "2026-10-31T21:50:09.303Z",
+  "source": "real_SQLite_and_pinned_memory_pipeline",
+  "fictionalData": true,
+  "simulatedTime": true,
+  "modelCalled": false,
+  "physicalDeviceConnected": false,
+  "humanForgettingValidated": false,
+  "halfLifeDays": 7,
+  "samples": [
+    {
+      "simulatedDay": 0,
+      "strength": 1,
+      "ageDays": 0,
+      "name": "小林",
+      "text": "今天一起看了猎户座"
+    },
+    {
+      "simulatedDay": 7,
+      "strength": 0.5,
+      "ageDays": 7,
+      "name": "小林",
+      "text": "今天一起看了猎户座"
+    },
+    {
+      "simulatedDay": 30,
+      "strength": 0.05127095975047738,
+      "ageDays": 30,
+      "name": "小林",
+      "text": "今天一起看了猎户座"
+    }
+  ],
+  "reinforced": {
+    "simulatedDay": 30,
+    "strength": 1,
+    "ageDays": 0
+  },
+  "readDoesNotReinforce": true,
+  "stableNamePreserved": true,
+  "deleteAllRemovesExperience": true,
+  "limits": "Keyword retrieval still returns the matching older event. Weight decay is not deletion or a validated human forgetting curve."
+}

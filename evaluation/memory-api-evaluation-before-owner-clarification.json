@@ -1,0 +1,118 @@
+{
+  "source": "configured_real_model_isolated_RAM_HTTP_memory_API",
+  "fictionalData": true,
+  "physicalDeviceConnected": false,
+  "confirmation": "programmatic_test_driver",
+  "model": "deepseek-flash",
+  "full30CasesVerified": false,
+  "manualScoresAssigned": false,
+  "cases": [
+    {
+      "id": "MEM01",
+      "input": "以后叫我小林，请记住。",
+      "before": {
+        "revision": 0,
+        "name": null,
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "proposal": {
+        "id": "3848cbf2-73ab-4d7c-ad27-6cbbe52ff7a4",
+        "kind": "profile",
+        "op": "set",
+        "field": "name",
+        "value": "小林",
+        "source": "以后叫我小林，请记住。",
+        "quote": "以后叫我小林",
+        "expectedRevision": 0,
+        "expiresAt": 1793483969502,
+        "status": "PENDING"
+      },
+      "checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "programmaticConfirmation": {
+        "ok": true,
+        "operation": "set",
+        "field": "name",
+        "revision": 1
+      },
+      "after": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      }
+    },
+    {
+      "id": "MEM02",
+      "input": "我应该怎么称呼？",
+      "before": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "needs_manual_review",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "response": {
+        "sessionId": "eval-1",
+        "reply": "你可以叫我小林，不过我的资料里还没有你的特别偏好；你想让我用什么称呼呢？",
+        "memoryRevision": 1,
+        "usage": {
+          "promptTokens": 129,
+          "completionTokens": 19,
+          "durationMs": 1067
+        }
+      },
+      "after": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      },
+      "checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsConfirmedName": true
+      }
+    },
+    {
+      "id": "MEM03",
+      "input": "我喜欢天文，帮我记住。",
+      "before": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "proposal": {
+        "id": "67a38257-c2d0-4b67-b8d7-9f61a87b7ace",
+        "kind": "profile",
+        "op": "set",
+        "field": "preference0",
+        "value": "喜欢天文",
+        "source": "我喜欢天文，帮我记住。",
+        "quote": "我喜欢天文",
+        "expectedRevision": 1,
+        "expiresAt": 1793483971819,
+        "status": "PENDING"
+      }
+    }
+  ],
+  "completed": false,
+  "usage": {
+    "requests": 3,
+    "promptTokens": 582,
+    "completionTokens": 67
+  },
+  "error": "EVALUATION_FAILED",
+  "generatedAt": "2026-10-31T21:59:01.820Z"
+}

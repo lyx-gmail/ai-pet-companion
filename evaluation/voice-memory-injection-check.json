@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "source": "three_unittest_checks_against_actual_pinned_Dialogue_and_actual_quick_prompt_or_template",
+  "tests": 3,
+  "observed_red_failures": 1,
+  "observed_red_errors": 1,
+  "checks": [
+    "quick prompt without placeholder injects memory",
+    "template injection preserves literal backslashes",
+    "existing placeholder is replaced without stale next-turn content"
+  ],
+  "dialogue_sha256": "fe6511a079e04ed61c17d02df45baf0c278d19ea3609f7f91151eca4dcb609ec",
+  "hardware_verified": false,
+  "model_called": false
+}

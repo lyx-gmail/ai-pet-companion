@@ -1,0 +1,44 @@
+{
+  "source": "actual_device_model_and_MCP_after_fixed_protocol_text",
+  "app_sha256": "27a4f7280af2d016a862530ca50aa494d37bd74b36ef541d95d410b1348fee7d",
+  "hardware_ASR_verified": false,
+  "physical_button_contact_verified": false,
+  "hardware_acoustic_playback_verified": false,
+  "cases": [
+    {
+      "command": "query_state",
+      "text_accepted": true,
+      "rejected_attempts": 0,
+      "receipt": {
+        "tool": "self.pet.get_state",
+        "ok": true,
+        "code": "OK",
+        "satiety": 89,
+        "revision": 60910
+      },
+      "ok": true
+    },
+    {
+      "command": "request_feed",
+      "text_accepted": true,
+      "rejected_attempts": 0,
+      "receipt": {
+        "tool": "self.pet.feed",
+        "ok": true,
+        "code": "OK",
+        "delta": 11,
+        "durable": true,
+        "satiety": 100,
+        "revision": 60919
+      },
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "post_action_USB_state": {
+    "satiety": 100,
+    "revision": 60920,
+    "persisted_revision": 60919,
+    "feed_cooldown_seconds": 59
+  }
+}

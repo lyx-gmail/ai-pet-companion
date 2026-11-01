@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-30",
+  "fixture": "official archive test_wavs/zh.wav",
+  "fixture_is_user_recording": false,
+  "asr_text": "开饭时间早上9点至下午5点。",
+  "audio_seconds": 5.592,
+  "decode_seconds": 0.276,
+  "vad_silence_probability": 0.01201203465461731,
+  "vad_max_speech_probability": 0.9999027252197266,
+  "vad_frames": 174,
+  "hardware_voice_verified": false,
+  "accuracy_evaluation": false
+}

@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-31T18:10:50.0269886+08:00",
+  "dataTestsPassed": true,
+  "nativeWindowTwoRefreshesPassed": true,
+  "launcherWindowObserved": true,
+  "memoryOnline": true,
+  "modelConfigured": true,
+  "profileReadable": true,
+  "voiceListening": true,
+  "otaListening": true,
+  "tcpConnections": 0,
+  "tempFileCount": 995,
+  "newDependencies": false,
+  "servicesRestarted": false,
+  "modelCallsMade": false,
+  "physicalVoiceAcceptance": false
+}

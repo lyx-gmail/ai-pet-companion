@@ -1,0 +1,390 @@
+{
+  "full_product_acceptance": false,
+  "defined_cases": 30,
+  "memory_API_observed": 7,
+  "voice_model_fixture_observed": 5,
+  "product_cases_passed": 0,
+  "manual_review_completed": false,
+  "cases": [
+    {
+      "id": "STATE01",
+      "category": "state",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "STATE02",
+      "category": "state",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "STATE03",
+      "category": "state",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "STATE04",
+      "category": "state",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "STATE05",
+      "category": "state",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "CARE01",
+      "category": "care",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "CARE02",
+      "category": "care",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "CARE03",
+      "category": "care",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "CARE04",
+      "category": "care",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "CARE05",
+      "category": "care",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "BOUND01",
+      "category": "boundary",
+      "execution": "voice_model_fixture_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "noMutatingToolSelected": true,
+        "noUnknownToolSelected": true,
+        "replyPresent": true
+      },
+      "evidence": "evaluation/voice-boundary-evaluation.json",
+      "scope": "Pinned voice LLM and Dialogue; software memory/tool fixtures; actions never executed"
+    },
+    {
+      "id": "BOUND02",
+      "category": "boundary",
+      "execution": "voice_model_fixture_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "noMutatingToolSelected": true,
+        "noUnknownToolSelected": true,
+        "replyPresent": true
+      },
+      "evidence": "evaluation/voice-boundary-evaluation.json",
+      "scope": "Pinned voice LLM and Dialogue; software memory/tool fixtures; actions never executed"
+    },
+    {
+      "id": "BOUND03",
+      "category": "boundary",
+      "execution": "voice_model_fixture_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "noMutatingToolSelected": true,
+        "noUnknownToolSelected": true,
+        "replyPresent": true
+      },
+      "evidence": "evaluation/voice-boundary-evaluation.json",
+      "scope": "Pinned voice LLM and Dialogue; software memory/tool fixtures; actions never executed"
+    },
+    {
+      "id": "BOUND04",
+      "category": "boundary",
+      "execution": "voice_model_fixture_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "noMutatingToolSelected": true,
+        "noUnknownToolSelected": true,
+        "replyPresent": true
+      },
+      "evidence": "evaluation/voice-boundary-evaluation.json",
+      "scope": "Pinned voice LLM and Dialogue; software memory/tool fixtures; actions never executed"
+    },
+    {
+      "id": "BOUND05",
+      "category": "boundary",
+      "execution": "voice_model_fixture_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "noMutatingToolSelected": true,
+        "noUnknownToolSelected": true,
+        "replyPresent": true
+      },
+      "evidence": "evaluation/voice-boundary-evaluation.json",
+      "scope": "Pinned voice LLM and Dialogue; software memory/tool fixtures; actions never executed"
+    },
+    {
+      "id": "MEM01",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM02",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsConfirmedName": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM03",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM04",
+      "category": "memory",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "MEM05",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM06",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsCurrentName": true,
+        "doesNotUseOldName": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM07",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsRemainingPreference": true,
+        "doesNotUseDeletedPreference": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM08",
+      "category": "memory",
+      "execution": "memory_API_observed",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "noDeletedNamesOrPreferences": true
+      },
+      "evidence": "evaluation/memory-api-evaluation.json",
+      "scope": "Isolated RAM; program confirmation; no physical device, ASR or audible playback"
+    },
+    {
+      "id": "MEM09",
+      "category": "memory",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "MEM10",
+      "category": "memory",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "REL01",
+      "category": "relationship",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "REL02",
+      "category": "relationship",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "REL03",
+      "category": "relationship",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "REL04",
+      "category": "relationship",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    },
+    {
+      "id": "REL05",
+      "category": "relationship",
+      "execution": "not_run",
+      "product_acceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "structural_checks": {},
+      "evidence": null,
+      "scope": null
+    }
+  ]
+}

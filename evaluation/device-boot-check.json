@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "source": "physical_COM4_serial",
+  "observed_pet_runtime": true,
+  "health_samples": [
+    {
+      "revision": 62369,
+      "satiety": 98,
+      "mood": 100,
+      "energy": 50,
+      "closeness": 52,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 62379,
+      "satiety": 98,
+      "mood": 100,
+      "energy": 50,
+      "closeness": 52,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 62389,
+      "satiety": 98,
+      "mood": 100,
+      "energy": 50,
+      "closeness": 52,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    }
+  ],
+  "state_ticks_progressing": true,
+  "storage_available": true,
+  "crash_observed": false,
+  "hardware_animation_verified": false,
+  "hardware_audio_verified": false,
+  "ok": true,
+  "capture_seconds": 30,
+  "serial_reconnects": 0
+}

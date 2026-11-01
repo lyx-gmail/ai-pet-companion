@@ -1,0 +1,13 @@
+{
+  "source": "real_isolated_Node_store_HTTP_provider_and_pinned_dialogue_renderer",
+  "cloud_api_called": false,
+  "hardware_verified": false,
+  "fixture_only": true,
+  "ok": true,
+  "correction_old_chat_and_tool_history_removed": true,
+  "deletion_not_recalled": true,
+  "unchanged_revision_preserves_chat": true,
+  "outage_removes_personal_history": true,
+  "official_memory_database_unchanged_by_design": true,
+  "actual_quick_prompt_render_verified": true
+}

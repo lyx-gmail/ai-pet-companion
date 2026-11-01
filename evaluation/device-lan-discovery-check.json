@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-31",
+  "source": "physical_post_boot_NVS_readback_and_local_HMAC_verification",
+  "vendor_namespaces_unchanged": {
+    "wifi": true,
+    "websocket": true,
+    "mqtt": true,
+    "board": true,
+    "assets": true,
+    "nvs.net80211": true
+  },
+  "local_websocket_namespace_present": true,
+  "stored_local_url_matches_server": true,
+  "discovery_token_verified_for_real_device_and_client": true,
+  "pet_snapshot_namespace_preserved": true,
+  "hardware_websocket_hello_verified": false,
+  "hardware_audio_verified": false,
+  "ok": true
+}

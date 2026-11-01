@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-11-01T05:05:58.6264931+08:00",
+  "allDisconnected": true,
+  "allConnected": true,
+  "repeatConnectReusesProcesses": true,
+  "memoryDisconnectPreservesVoice": true,
+  "voiceDisconnectPreservesMemory": true,
+  "foreignPortPreserved": true,
+  "restoredOnline": true
+}

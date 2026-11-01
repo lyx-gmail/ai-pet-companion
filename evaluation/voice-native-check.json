@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-30",
+  "sample_rate": 16000,
+  "frame_duration_ms": 60,
+  "opus_pcm_bytes": 1920,
+  "opus_packet_bytes": 147,
+  "decoded_pcm_bytes": 1920,
+  "ffmpeg_version": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+  "hardware_voice_verified": false
+}

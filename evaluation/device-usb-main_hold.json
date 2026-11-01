@@ -1,0 +1,8 @@
+{
+  "source": "physical_native_USB_development_command",
+  "command": "main_hold",
+  "command_dispatched": true,
+  "state": null,
+  "physical_button_press_verified": false,
+  "ok": true
+}

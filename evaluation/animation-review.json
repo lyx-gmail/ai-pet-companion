@@ -1,0 +1,23 @@
+{
+  "checkedOn": "2026-10-30",
+  "scope": "browser asset preview and source inspection only; no new firmware flashed",
+  "ottoCommit": "4a666924e8e4e2bb55fb9d3167211bb936224abf",
+  "roboEyesCommit": "b42f8e596535234932be3514ac7a813d4ced0046",
+  "grobotCommit": "858d8da648c9e71ff9b9f5e6f558ba85293a70fb",
+  "esphomeCandidateCommit": "8926a76e83d136b748f747fb394f84c6ce43c9c3",
+  "editorCommit": "ed19b4db227687c25fd4a057d25cf2d3771541b8",
+  "kawaiiCandidateCommit": "d58e1c8f8e7baa7bc93d5ae0dc18affee7f3ccbb",
+  "previewImagesLoaded": 22,
+  "previewMainCssSize": [480, 480],
+  "allOttoAssetsBytes": 964257,
+  "decodedWith": "Chromium ImageDecoder",
+  "decodedAssets": [
+    {"name":"neutral","bytes":37981,"frames":48,"size":[240,240],"firstFrameMs":80},
+    {"name":"happy","bytes":36874,"frames":40,"size":[240,240],"firstFrameMs":80},
+    {"name":"delicious","bytes":48280,"frames":40,"size":[240,240],"firstFrameMs":80},
+    {"name":"sleepy","bytes":43449,"frames":50,"size":[240,240],"firstFrameMs":80}
+  ],
+  "hardwareFps": null,
+  "runtimeTargetFps": [25,30],
+  "editorVisualReview": "opened; screenshot timed out; not completed"
+}

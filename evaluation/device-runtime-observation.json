@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "app_sha256": "27a4f7280af2d016a862530ca50aa494d37bd74b36ef541d95d410b1348fee7d",
+  "requested_seconds": 7200,
+  "source": "physical_COM4_continuous_read_only_observation",
+  "full_SOAK01_verified": false,
+  "wifi_interruption_tested": false,
+  "physical_controls_tested": false,
+  "acoustic_quality_verified": false,
+  "elapsed_seconds": 7200.17,
+  "health": {
+    "date": "2026-11-01",
+    "source": "physical_COM4_serial",
+    "observed_pet_runtime": true,
+    "health_samples": [
+      {
+        "revision": 45255,
+        "satiety": 98,
+        "mood": 89,
+        "energy": 70,
+        "closeness": 52,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 45265,
+        "satiety": 98,
+        "mood": 89,
+        "energy": 70,
+        "closeness": 52,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 45275,
+        "satiety": 98,
+        "mood": 89,
+        "energy": 70,
+        "closeness": 52,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 45285,
+        "satiety": 98,
+        "mood": 89,
+        "energy": 70,
+        "closeness": 52,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 45295,
+        "satiety": 98,
+        "mood": 89,
+        "energy": 70,
+        "closeness": 52,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 45305,
+        "satiety": 98,
+        "mood": 89,
+        "energy": 70,
+        "closeness": 52,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      }
+    ],
+    "state_ticks_progressing": true,
+    "storage_available": true,
+    "crash_observed": false,
+    "hardware_animation_verified": false,
+    "hardware_audio_verified": false,
+    "ok": true
+  },
+  "health_sample_count": 721,
+  "unexpected_boot_observed": false,
+  "minimum_observed_free_sram": 115447,
+  "first_observed_free_sram": 115743,
+  "last_observed_free_sram": 115727
+}

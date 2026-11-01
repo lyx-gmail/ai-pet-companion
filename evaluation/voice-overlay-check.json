@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "server_commit": "1a095d5bed23e49a17f817c7f378e2a86f298dfc",
+  "pristine_patch": true,
+  "idempotent": true,
+  "files": {
+    "core/connection.py": "7f78f5cd97dcead11459d6d76df0a4622b1025f42afc513bbbae4ce3f2f8aaa2",
+    "core/utils/dialogue.py": "fe6511a079e04ed61c17d02df45baf0c278d19ea3609f7f91151eca4dcb609ec",
+    "core/providers/tools/unified_tool_handler.py": "5025af1aaf9eaf8ef4ab94c0e683a031a14580c67df8b5798d6737d84629ee25",
+    "core/providers/tools/device_mcp/mcp_handler.py": "c9fea630781c789fde42f34209ad28d6a27e3c5b7dabdedcc9c1df56b5282bb0",
+    "core/websocket_server.py": "3a11eeeededc357f931871370d9039bcb88eff0c7cd94599881b4335cb8dec5a",
+    "core/api/ota_handler.py": "4095f5de97fd21d46ea5994892c1d98cc2e2e3d5319ead30a48fbdd5c8052b9c",
+    "plugins_func/loadplugins.py": "9a847f66396ccf80bf0082c695d274f65dcc3f41297147c7264438f4d863edc3",
+    "core/utils/util.py": "125608f3bcdab739d2bc82e78e703016f26dfe47d4df168954ec28fc9715d7a7",
+    "core/providers/tools/device_mcp/mcp_executor.py": "a53ad211276b74ba2fb47e94bf1f113b3fa97ca43a6b6d75ec0632365d4717b7",
+    "core/handle/receiveAudioHandle.py": "a71f33e840a9076312bd812baec6d55502e7dbfa5f3c3c52c830867514c58c4c",
+    "core/handle/sendAudioHandle.py": "954523210384491e884215613460bbe237baef5d6c3317b409498b5b4ba2a080",
+    "core/providers/asr/base.py": "1efea86983ad0121316ef0e28e8c47f42291f92d5d0bc869cfe9cb710aa647f7",
+    "core/http_server.py": "624cff5c50e05971076f288d8c392b0704b16b3423d3ced957d97d99612b82a1",
+    "core/providers/tools/pet_identity.py": "828728c7afab3cda615dab97c19603fc0a687b0158f17f8fd6b2d371d1f30943",
+    "core/pet_network.py": "19064e9d8b7f8b6c44ad93b8579f63158480e0886b08096c7026e35059e4554f",
+    "core/pet_voice_source.py": "f5fb24904528af9a3f99677fbfadfbe7271e622d8273dc43ece64d2b46d32fde",
+    "core/api/pet_memory_handler.py": "083d76278c2980f7dc8610ccd34aa4925032f41a3c364904e8aee20d0df2580e",
+    "core/pet_official_proxy.py": "03efc2f34f7359f4e1b70bbdd007408102b3f68fc04af9b02d4e60c31ff4b734",
+    "core/pet_official_memory.py": "8739571391e1dd48d0e4fd0c7421a5661ef14ca806c87069beba92fcc8465260"
+  }
+}

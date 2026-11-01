@@ -1,0 +1,13 @@
+{
+  "app_sha256": "744d0009cec29f64b8011d40134ff455f54102e3185be453cd1673dfa7173273",
+  "compile_time_check_groups": 3,
+  "source_tests_passed": 3,
+  "pristine_patches_and_repeat_passed": true,
+  "full_build_passed": true,
+  "flashed_and_readback_verified": true,
+  "protected_regions_verified": true,
+  "USB_state_verified": true,
+  "hardware_ASR_verified": false,
+  "acoustic_playback_verified": false,
+  "diagnostic_rejection_hardware_check": "not_exercised_device_wifi_configuring"
+}

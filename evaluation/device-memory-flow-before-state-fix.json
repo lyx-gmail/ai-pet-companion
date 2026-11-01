@@ -1,0 +1,12 @@
+{
+  "source": "actual_device_protocol_text_and_USB_key_dispatch",
+  "isolated_memory_fixture": true,
+  "real_llm_extraction": true,
+  "hardware_ASR_verified": false,
+  "physical_switch_contact_verified": false,
+  "hardware_acoustic_playback_verified": false,
+  "cases": [],
+  "ok": false,
+  "error_type": "RuntimeError",
+  "error_code": "DEVICE_CONFIRMATION_NOT_PRESENTED"
+}

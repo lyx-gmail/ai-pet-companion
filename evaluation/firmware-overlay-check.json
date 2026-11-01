@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "firmware_commit": "43ef2f4e7f0957dc62ec7d628ac2819d226127b8",
+  "pristine_patch": true,
+  "idempotent": true,
+  "files": {
+    "main/application.h": "a3f00f88b3b0452da6e4a0e4727043a9de4bcb4c6f1b29b02a56c3038303a66d",
+    "main/application.cc": "93a53542115d031b0542591471643fa89828e2cd5029e57ad296db29b7be79ca",
+    "main/audio/audio_service.h": "ee61d4a020e6d0cf4aabd8d129520a81db5c5b76f302023ca240c68aee701b5c",
+    "main/audio/audio_service.cc": "a50548936251848dd54d8a1a96b732041d2a3a72ebeee223bc1698f9bc582897",
+    "main/mcp_server.h": "cd805f3d3f7a3a980b567f66aeee9d090dd581227dcfb8d1d76bb4288fdcf4da",
+    "main/mcp_server.cc": "97a1e1fc2e261b914414ee518c72253c433d6c24e3e9d5c266757c3cd9b54ccb",
+    "main/ota.cc": "1974bc59d87e93b980e6773a1159c71144b92001289aaa8c7f8a3855a9dc41a4",
+    "main/protocols/websocket_protocol.cc": "4e8c53b6cf1887b93577ecd667f55bdad30f4fffbd76cb2f5b18bf700fa7c55d",
+    "main/protocols/protocol.h": "3ab7987e6fe6729a59b26a74682f5b20f9202475f8c0f5422f441259eb6a64c4",
+    "main/boards/common/wifi_board.cc": "b99c741cd0d2290b8488b2b0c848bd3717824933c75ad615ae327ea331494c14",
+    "main/pet_endpoint.h": "b6e08b06f1381bf25d70f9be9c947445e0857f7da5a92954d3e1bd382eca8e47"
+  },
+  "hardware_audio_verified": false
+}

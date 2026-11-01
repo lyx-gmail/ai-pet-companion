@@ -1,0 +1,331 @@
+{
+  "spec_cases": 36,
+  "current_app_sha256": "cb5efaa25c52fb18c0d8827c05862d59a8820c4466afb18a32d5536f890f7d15",
+  "full_product_acceptance": false,
+  "cases": [
+    {
+      "id": "UI01",
+      "status": "partial",
+      "evidence": "evaluation/device-visual-smoke.json",
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "旧版用户确认全屏眼睛",
+      "remaining": "当前固件收音/思考/播放全部页面的实物录像"
+    },
+    {
+      "id": "UI02",
+      "status": "partial",
+      "evidence": "evaluation/firmware-overlay-check.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "固定源码补丁及幂等检查",
+      "remaining": "网络通知期间当前固件的可见布局"
+    },
+    {
+      "id": "KEY01",
+      "status": "partial",
+      "evidence": "evaluation/device-care-voice-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "旧版工具喂食成功",
+      "remaining": "真实按键触点、一次性触发与反馈p95"
+    },
+    {
+      "id": "KEY02",
+      "status": "partial",
+      "evidence": "evaluation/device-sleep-smoke.json",
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "用户确认旧版长按入睡",
+      "remaining": "长按释放不补短按的当前硬件验收"
+    },
+    {
+      "id": "KEY03",
+      "status": "partial",
+      "evidence": "evaluation/device-settings-smoke.json",
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "用户曾确认中键设置；映射已在固件固定",
+      "remaining": "当前外壳位置与GPIO映射图及实物标注"
+    },
+    {
+      "id": "KEY04",
+      "status": "partial",
+      "evidence": "evaluation/device-audio-cancel-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "旧版静音Opus非空队列清零",
+      "remaining": "当前固件实体中键取消和可听尾音"
+    },
+    {
+      "id": "CARE01",
+      "status": "partial",
+      "evidence": "evaluation/device-care-voice-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的实际模型工具喂食89→100，封顶且持久化，USB读回一致",
+      "remaining": "标准初态70到85及单次事件号"
+    },
+    {
+      "id": "CARE02",
+      "status": "partial",
+      "evidence": "evaluation/care-bridge-check.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "桥接边界软件检查",
+      "remaining": "当前固件满饱/冷却均无奖励与正确答复"
+    },
+    {
+      "id": "CARE03",
+      "status": "partial",
+      "evidence": "evaluation/device-clock-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的固件抚摸81到89且写入时间线",
+      "remaining": "从70到78的标准初态及可见开心反馈"
+    },
+    {
+      "id": "CARE04",
+      "status": "partial",
+      "evidence": "evaluation/device-wifi-recovery-check.json",
+      "evidence_ok": true,
+      "image_scope": "current",
+      "proves": "无线断开时心情100抚摸不增长、不进入冷却；睡眠与唤醒仍可存盘",
+      "remaining": "满心情时的可见反馈；各关系字段的完整防刷边界"
+    },
+    {
+      "id": "SLEEP01",
+      "status": "partial",
+      "evidence": "evaluation/device-sleep-smoke.json",
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "旧版用户确认闭眼变暗",
+      "remaining": "当前固件5分钟睡眠数值与无主动发声"
+    },
+    {
+      "id": "SLEEP02",
+      "status": "partial",
+      "evidence": "evaluation/device-sleep-smoke.json",
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "旧版中键唤醒只唤醒",
+      "remaining": "标准用例指定KF键唤醒、不喂食及再次照顾"
+    },
+    {
+      "id": "SET01",
+      "status": "partial",
+      "evidence": "evaluation/device-settings-smoke.json",
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "旧版用户确认长按进入/退出",
+      "remaining": "当前固件编辑回滚和30秒自动退出"
+    },
+    {
+      "id": "SET02",
+      "status": "partial",
+      "evidence": "evaluation/firmware-build.json",
+      "evidence_ok": null,
+      "image_scope": "current",
+      "proves": "当前固件编译且有持久化字段",
+      "remaining": "静音设置、重启、恢复输出的实机闭环"
+    },
+    {
+      "id": "SAVE01",
+      "status": "partial",
+      "evidence": "evaluation/device-clock-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的固件软件重启保留已提交喂食",
+      "remaining": "真实拔电重启、设置与Wi-Fi保留"
+    },
+    {
+      "id": "SAVE02",
+      "status": "partial",
+      "evidence": "evaluation/offline-time-core-check.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "格式拒绝/迁移编译断言及无时钟重启",
+      "remaining": "实际损坏存档故障注入且原数据保留"
+    },
+    {
+      "id": "NET01",
+      "status": "partial",
+      "evidence": "evaluation/device-clock-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "电脑夹具无时间时本地照顾可用",
+      "remaining": "真实Wi-Fi断开下所有照顾与保存"
+    },
+    {
+      "id": "NET02",
+      "status": "partial",
+      "evidence": "evaluation/device-wifi-recovery-check.json",
+      "evidence_ok": true,
+      "image_scope": "current",
+      "proves": "实际软件停止无线20秒时0.437秒返回idle；离线睡眠/唤醒存盘，恢复后语音重连通过",
+      "remaining": "可见/可听故障提示；真实AP消失与其他半断连故障期限"
+    },
+    {
+      "id": "AI01",
+      "status": "partial",
+      "evidence": "evaluation/device-care-voice-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的真实模型调用设备状态工具并收到真实饱食数值",
+      "remaining": "喂食后特定问句及原话一致性"
+    },
+    {
+      "id": "AI02",
+      "status": "partial",
+      "evidence": "evaluation/care-bridge-check.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "工具拒绝规则的软件检查",
+      "remaining": "当前真实模型遇冷却时的原话与数值"
+    },
+    {
+      "id": "AI03",
+      "status": "partial",
+      "evidence": "evaluation/care-bridge-check.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "桥接重放检查",
+      "remaining": "当前固件同轮重复请求仅改变一次"
+    },
+    {
+      "id": "AI04",
+      "status": "partial",
+      "evidence": "evaluation/device-care-voice-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的协议文字触发真实模型在思考阶段成功调用喂食",
+      "remaining": "声学语音意图与可见动画"
+    },
+    {
+      "id": "AI05",
+      "status": "partial",
+      "evidence": "evaluation/firmware-build.json",
+      "evidence_ok": null,
+      "image_scope": "current",
+      "proves": "编译含持久化睡眠意图与兜底",
+      "remaining": "当前固件提交后TTS失败仍5秒入睡"
+    },
+    {
+      "id": "MEM01",
+      "status": "partial",
+      "evidence": "evaluation/device-memory-flow-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "旧版真实模型+USB确认/取消/超时",
+      "remaining": "当前固件含重启未确认草稿不保存"
+    },
+    {
+      "id": "MEM02",
+      "status": "partial",
+      "evidence": "evaluation/live-memory-result.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "虚构资料进程重启后真实模型召回",
+      "remaining": "当前设备声学输入、新会话及原话"
+    },
+    {
+      "id": "MEM03",
+      "status": "partial",
+      "evidence": "evaluation/device-memory-ui-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "旧版隔离RAM库单项/全部删除",
+      "remaining": "当前固件更正/删除后新对话不复活"
+    },
+    {
+      "id": "MEM04",
+      "status": "partial",
+      "evidence": "evaluation/device-memory-flow-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "旧版确认流程及取消/超时",
+      "remaining": "静音可读确认和第二草稿BUSY实机验收"
+    },
+    {
+      "id": "MEM05",
+      "status": "partial",
+      "evidence": "evaluation/device-memory-ui-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "旧版丢回执重试、重进与断网失效",
+      "remaining": "当前固件新增和删除的完整故障回归"
+    },
+    {
+      "id": "MEM06",
+      "status": "verified_memory_layer",
+      "evidence": "evaluation/memory-lifecycle-demo.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "真实SQLite虚拟0/7/30天降权、重提、稳定资料、删除",
+      "remaining": "不支持声称人类遗忘模型或真实运行30天"
+    },
+    {
+      "id": "REL01",
+      "status": "partial",
+      "evidence": "evaluation/offline-time-core-check.json",
+      "evidence_ok": true,
+      "image_scope": "not_image_bound",
+      "proves": "固定状态/时间线编译断言",
+      "remaining": "单独保存标准24小时窗口的可审阅数值证据"
+    },
+    {
+      "id": "REL02",
+      "status": "partial",
+      "evidence": "evaluation/device-chat-rejection-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的固件可计分前置成立时，诊断文字对话未增加互动计分",
+      "remaining": "标准3次间隔互动窗口及防刷分完整证据"
+    },
+    {
+      "id": "TIME01",
+      "status": "partial",
+      "evidence": "evaluation/device-clock-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的无时间重启保留喂食冷却46秒",
+      "remaining": "独立标准冷却重启用例与更多边界"
+    },
+    {
+      "id": "TIME02",
+      "status": "partial",
+      "evidence": "evaluation/device-clock-check.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的延迟校时单次结算并保留照顾；上限有编译断言",
+      "remaining": "真实长离线间隔和24小时/7天硬件边界"
+    },
+    {
+      "id": "PERF01",
+      "status": "not_verified",
+      "evidence": null,
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "无完整记录",
+      "remaining": "20轮真实对话、100次切换、堆趋势及可听断续"
+    },
+    {
+      "id": "PERF02",
+      "status": "not_verified",
+      "evidence": null,
+      "evidence_ok": null,
+      "image_scope": "not_image_bound",
+      "proves": "无完整记录",
+      "remaining": "动画开/关各20轮，同网络首响p50/p95与听感"
+    },
+    {
+      "id": "SOAK01",
+      "status": "partial",
+      "evidence": "evaluation/device-runtime-observation.json",
+      "evidence_ok": true,
+      "image_scope": "older_image",
+      "proves": "该记录中的固件7200秒/721次健康采样，无异常重启且存档可用",
+      "remaining": "真实断网恢复、状态/设置交互及最终视听"
+    }
+  ]
+}

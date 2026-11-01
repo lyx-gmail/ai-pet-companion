@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31",
+  "source": "user_live_confirmation",
+  "question": "Hold the middle key about 2 seconds to enter Chinese settings, then hold again to return to full-screen eyes, without changing volume or brightness.",
+  "user_reply": "出现了，可以",
+  "middle_hold_opens_settings": true,
+  "middle_hold_exits_to_eyes": true,
+  "setting_commit_verified": false,
+  "draft_rollback_verified": false,
+  "timeout_verified": false,
+  "microphone_pause_verified": false
+}

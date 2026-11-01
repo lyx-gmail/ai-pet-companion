@@ -1,0 +1,310 @@
+{
+  "source": "configured_real_model_isolated_RAM_HTTP_memory_API",
+  "fictionalData": true,
+  "physicalDeviceConnected": false,
+  "confirmation": "programmatic_test_driver",
+  "model": "deepseek-flash",
+  "full30CasesVerified": false,
+  "manualScoresAssigned": false,
+  "cases": [
+    {
+      "id": "MEM01",
+      "input": "以后叫我小林，请记住。",
+      "before": {
+        "revision": 0,
+        "name": null,
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "proposal": {
+        "id": "6b87774a-ab4d-4cf9-a00f-79d263d6324a",
+        "kind": "profile",
+        "op": "set",
+        "field": "name",
+        "value": "小林",
+        "source": "以后叫我小林，请记住。",
+        "quote": "叫我小林",
+        "expectedRevision": 0,
+        "expiresAt": 1793484027717,
+        "status": "PENDING"
+      },
+      "checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "programmaticConfirmation": {
+        "ok": true,
+        "operation": "set",
+        "field": "name",
+        "revision": 1
+      },
+      "after": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      }
+    },
+    {
+      "id": "MEM02",
+      "input": "我应该怎么称呼？",
+      "before": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "needs_manual_review",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "response": {
+        "sessionId": "eval-1",
+        "reply": "可以直接叫你小林，或者你有更喜欢的叫法吗？",
+        "memoryRevision": 1,
+        "usage": {
+          "promptTokens": 169,
+          "completionTokens": 12,
+          "durationMs": 995
+        }
+      },
+      "after": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      },
+      "checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsConfirmedName": true
+      }
+    },
+    {
+      "id": "MEM03",
+      "input": "我喜欢天文，帮我记住。",
+      "before": {
+        "revision": 1,
+        "name": "小林",
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "proposal": {
+        "id": "1a7dc7da-fe5c-4181-af75-cbe411239233",
+        "kind": "profile",
+        "op": "set",
+        "field": "preference0",
+        "value": "喜欢天文",
+        "source": "我喜欢天文，帮我记住。",
+        "quote": "我喜欢天文",
+        "expectedRevision": 1,
+        "expiresAt": 1793484029853,
+        "status": "PENDING"
+      },
+      "checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "programmaticConfirmation": {
+        "ok": true,
+        "operation": "set",
+        "field": "preference0",
+        "revision": 2
+      },
+      "after": {
+        "revision": 2,
+        "name": "小林",
+        "preferences": [
+          {
+            "slot": "preference0",
+            "value": "喜欢天文"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MEM05",
+      "input": "现在改叫我小禾，别再叫小林。",
+      "before": {
+        "revision": 2,
+        "name": "小林",
+        "preferences": [
+          {
+            "slot": "preference0",
+            "value": "喜欢天文"
+          }
+        ]
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "not_verified",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "proposal": {
+        "id": "f708cbb8-0934-4aae-99b0-9597dfe31092",
+        "kind": "profile",
+        "op": "set",
+        "field": "name",
+        "value": "小禾",
+        "source": "现在改叫我小禾，别再叫小林。",
+        "quote": "改叫我小禾",
+        "expectedRevision": 2,
+        "expiresAt": 1793484030898,
+        "status": "PENDING"
+      },
+      "checks": {
+        "proposalMatches": true,
+        "noWriteBeforeConfirmation": true,
+        "confirmedRevisionAdvancedOnce": true
+      },
+      "programmaticConfirmation": {
+        "ok": true,
+        "operation": "set",
+        "field": "name",
+        "revision": 3
+      },
+      "after": {
+        "revision": 3,
+        "name": "小禾",
+        "preferences": [
+          {
+            "slot": "preference0",
+            "value": "喜欢天文"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MEM06",
+      "input": "现在应该怎么叫我？",
+      "before": {
+        "revision": 3,
+        "name": "小禾",
+        "preferences": [
+          {
+            "slot": "preference0",
+            "value": "喜欢天文"
+          }
+        ]
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "needs_manual_review",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "response": {
+        "sessionId": "eval-2",
+        "reply": "我按资料叫你“小禾”，可以吗？",
+        "memoryRevision": 3,
+        "usage": {
+          "promptTokens": 183,
+          "completionTokens": 11,
+          "durationMs": 1325
+        }
+      },
+      "after": {
+        "revision": 3,
+        "name": "小禾",
+        "preferences": [
+          {
+            "slot": "preference0",
+            "value": "喜欢天文"
+          }
+        ]
+      },
+      "checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsCurrentName": true,
+        "doesNotUseOldName": true
+      }
+    },
+    {
+      "id": "MEM07",
+      "input": "你记得我有什么爱好？",
+      "before": {
+        "revision": 5,
+        "name": "小禾",
+        "preferences": [
+          {
+            "slot": "preference1",
+            "value": "爵士"
+          }
+        ]
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "needs_manual_review",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "response": {
+        "sessionId": "eval-3",
+        "reply": "记得你喜欢爵士，小禾。别的爱好我还不确定。",
+        "memoryRevision": 5,
+        "usage": {
+          "promptTokens": 183,
+          "completionTokens": 13,
+          "durationMs": 1009
+        }
+      },
+      "after": {
+        "revision": 5,
+        "name": "小禾",
+        "preferences": [
+          {
+            "slot": "preference1",
+            "value": "爵士"
+          }
+        ]
+      },
+      "checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "containsRemainingPreference": true,
+        "doesNotUseDeletedPreference": true
+      }
+    },
+    {
+      "id": "MEM08",
+      "input": "我叫什么，之前跟你聊过什么？",
+      "before": {
+        "revision": 6,
+        "name": null,
+        "preferences": []
+      },
+      "executionScope": "memory_HTTP_text_fixture",
+      "productAcceptance": "needs_manual_review",
+      "naturalness_1_to_5": null,
+      "personality_1_to_5": null,
+      "response": {
+        "sessionId": "eval-4",
+        "reply": "我这边还没存到你的名字，也不记得之前的聊天，所以暂时答不上来。\n要是你愿意，可以现在告诉我怎么称呼你。",
+        "memoryRevision": 6,
+        "usage": {
+          "promptTokens": 174,
+          "completionTokens": 30,
+          "durationMs": 1058
+        }
+      },
+      "after": {
+        "revision": 6,
+        "name": null,
+        "preferences": []
+      },
+      "checks": {
+        "profileUnchanged": true,
+        "memoryRevisionMatches": true,
+        "noDeletedNamesOrPreferences": true
+      }
+    }
+  ],
+  "completed": true,
+  "usage": {
+    "requests": 7,
+    "promptTokens": 1404,
+    "completionTokens": 138
+  },
+  "generatedAt": "2026-10-31T22:00:04.316Z"
+}

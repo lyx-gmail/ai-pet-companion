@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-31",
+  "source": "physical_COM4_serial",
+  "observed_pet_runtime": true,
+  "health_samples": [
+    {
+      "revision": 20231,
+      "satiety": 97,
+      "mood": 88,
+      "energy": 100,
+      "closeness": 50,
+      "sleeping": 1,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 20241,
+      "satiety": 97,
+      "mood": 88,
+      "energy": 100,
+      "closeness": 50,
+      "sleeping": 1,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 20251,
+      "satiety": 97,
+      "mood": 88,
+      "energy": 100,
+      "closeness": 50,
+      "sleeping": 1,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 20261,
+      "satiety": 97,
+      "mood": 88,
+      "energy": 100,
+      "closeness": 50,
+      "sleeping": 1,
+      "sleep_pending": 0,
+      "storage_available": 1
+    }
+  ],
+  "state_ticks_progressing": true,
+  "storage_available": true,
+  "crash_observed": false,
+  "hardware_animation_verified": false,
+  "hardware_audio_verified": false,
+  "ok": true,
+  "app_sha256": "4c3866edba146f2609e6bf016cd25aef9fa732704437865234a203942c2c4026"
+}

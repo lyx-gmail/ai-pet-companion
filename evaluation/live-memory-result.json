@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-10-30T08:39:09.512Z",
+  "ok": true,
+  "model": "deepseek-flash",
+  "data": "fictional",
+  "transport": "real HTTP + official model API",
+  "processRestart": true,
+  "confirmation": "test driver calls confirmation API; physical device not connected",
+  "phases": [
+    {
+      "phase": "write",
+      "steps": [
+        {
+          "action": "remember_and_confirm",
+          "input": "请记住，以后叫我小林。",
+          "field": "name",
+          "confirmedValue": "小林",
+          "revision": 1
+        },
+        {
+          "action": "remember_and_confirm",
+          "input": "请记住，我喜欢天文。",
+          "field": "preference0",
+          "confirmedValue": "喜欢天文",
+          "revision": 2
+        },
+        {
+          "action": "process_will_exit",
+          "profile": {
+            "revision": 2,
+            "name": "小林",
+            "preferences": [
+              {
+                "slot": "preference0",
+                "value": "喜欢天文"
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "requests": 2,
+        "promptTokens": 453,
+        "completionTokens": 47
+      }
+    },
+    {
+      "phase": "verify",
+      "steps": [
+        {
+          "action": "new_process_new_session_recall",
+          "sessionId": "after-process-restart",
+          "reply": "你是小林，喜欢天文。",
+          "memoryRevision": 2,
+          "usage": {
+            "promptTokens": 143,
+            "completionTokens": 6,
+            "durationMs": 1696
+          }
+        },
+        {
+          "action": "remember_and_confirm",
+          "input": "更正一下，请记住以后叫我小禾，不要再叫我小林。",
+          "field": "name",
+          "confirmedValue": "小禾",
+          "revision": 3
+        },
+        {
+          "action": "corrected_name_recall",
+          "sessionId": "after-process-restart",
+          "reply": "小禾。",
+          "memoryRevision": 3,
+          "usage": {
+            "promptTokens": 148,
+            "completionTokens": 3,
+            "durationMs": 1392
+          }
+        },
+        {
+          "action": "deleted_profile_not_recalled",
+          "sessionId": "after-process-restart",
+          "reply": "不确定呢，我的资料里没有你的名字，也没记下你喜欢什么。",
+          "memoryRevision": 4,
+          "usage": {
+            "promptTokens": 139,
+            "completionTokens": 16,
+            "durationMs": 1114
+          }
+        }
+      ],
+      "usage": {
+        "requests": 4,
+        "promptTokens": 676,
+        "completionTokens": 50
+      }
+    }
+  ]
+}

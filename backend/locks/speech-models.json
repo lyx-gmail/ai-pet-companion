@@ -1,0 +1,15 @@
+{
+  "sense_voice": {
+    "name": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+    "size": 163002883,
+    "sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+    "hash_source": "GitHub release asset digest from k2-fsa/sherpa-onnx"
+  },
+  "silero_vad": {
+    "source_repository": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+    "source_commit": "1a095d5bed23e49a17f817c7f378e2a86f298dfc",
+    "file": "main/xiaozhi-server/models/snakers4_silero-vad/src/silero_vad/data/silero_vad.onnx",
+    "sha256": "2623a2953f6ff3d2c1e61740c6cdb7168133479b267dfef114a4a3cc5bdd788f"
+  }
+}

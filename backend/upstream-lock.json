@@ -1,0 +1,19 @@
+{
+  "memory": {
+    "repository": "https://github.com/ClaraShafiq/MemoryConstellations.git",
+    "commit": "85a7deaeb57d13d43b241d00bd892e43ebc1f31c",
+    "license": "MIT"
+  },
+  "voice": {
+    "repository": "https://github.com/xinnan-tech/xiaozhi-esp32-server.git",
+    "commit": "1a095d5bed23e49a17f817c7f378e2a86f298dfc",
+    "license": "MIT"
+  },
+  "firmware": {
+    "repository": "https://github.com/78/xiaozhi-esp32.git",
+    "commit": "43ef2f4e7f0957dc62ec7d628ac2819d226127b8",
+    "tag": "v2.0.4",
+    "board": "xingzhi-cube-1.54tft-wifi"
+  },
+  "node": "22.23.4"
+}

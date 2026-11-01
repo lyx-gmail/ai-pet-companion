@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-31",
+  "source": "physical_COM4_serial",
+  "observed_pet_runtime": true,
+  "health_samples": [
+    {
+      "revision": 21886,
+      "satiety": 96,
+      "mood": 88,
+      "energy": 98,
+      "closeness": 50,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 21896,
+      "satiety": 96,
+      "mood": 88,
+      "energy": 98,
+      "closeness": 50,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 21906,
+      "satiety": 96,
+      "mood": 88,
+      "energy": 98,
+      "closeness": 50,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    },
+    {
+      "revision": 21916,
+      "satiety": 96,
+      "mood": 88,
+      "energy": 98,
+      "closeness": 50,
+      "sleeping": 0,
+      "sleep_pending": 0,
+      "storage_available": 1
+    }
+  ],
+  "state_ticks_progressing": true,
+  "storage_available": true,
+  "crash_observed": false,
+  "hardware_animation_verified": false,
+  "hardware_audio_verified": false,
+  "ok": true,
+  "local_activation_wait_skipped": true,
+  "activating_observed": false,
+  "idle_after_ip_ms": 190,
+  "blocking_retry_observed": false,
+  "app_sha256": "e99a137226a6f431ecabe028cbd4b4ab274a57ff6511246fa9214a7db697b35f",
+  "official_cloud_tested": false
+}

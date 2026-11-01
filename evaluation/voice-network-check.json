@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-31",
+  "local_lan_bind_probe_passed": true,
+  "generated_lan_urls_checked": true,
+  "authentication_enabled": true,
+  "auth_bypass_list_empty": true,
+  "physical_chip_identity_sources_agree": 3,
+  "bound_memory_init_verified": true,
+  "mismatched_memory_device_rejected": true,
+  "default_loopback_restored": true,
+  "server_started": false,
+  "device_endpoint_changed": false,
+  "hardware_voice_verified": false
+}

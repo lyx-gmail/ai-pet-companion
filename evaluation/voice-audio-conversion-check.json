@@ -1,0 +1,13 @@
+{
+  "source": "actual_upstream_audio_conversion_with_generated_tone",
+  "cloud_api_called": false,
+  "hardware_microphone_verified": false,
+  "hardware_playback_verified": false,
+  "ffprobe_lookup_forbidden": true,
+  "mp3_bytes": 2760,
+  "opus_frames": 6,
+  "pcm_bytes": 11520,
+  "sample_rate": 16000,
+  "frame_duration_ms": 60,
+  "ok": true
+}

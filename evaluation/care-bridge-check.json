@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-31",
+  "software_device": true,
+  "hardware_actions_verified": false,
+  "cloud_api_called": false,
+  "actual_handler_executor_mcp": true,
+  "distinct_rpc_ids": true,
+  "stable_logical_retry_id": true,
+  "same_turn_action_deduplicated": true,
+  "model_metadata_override_rejected": true,
+  "stale_cancelled_and_cross_action_calls_rejected": true,
+  "sleep_target_retry_and_boolean_validation": true,
+  "pending_futures": 0,
+  "ok": true
+}

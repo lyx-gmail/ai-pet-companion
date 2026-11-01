@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "source": "physical_device_menu_HTTP_and_USB_keys_isolated_Node_RAM_database",
+  "app_sha256": "7b6d581ecc7fe2d1b6450920a2a8e88260031780ab4c653523bf50077245ac12",
+  "formal_memory_unchanged": true,
+  "cloud_model_called": false,
+  "physical_switch_contact_verified": false,
+  "visual_layout_verified": false,
+  "profile_read_verified": true,
+  "cancel_preserves_profile": true,
+  "stale_revision_rejected": true,
+  "timeout_preserves_profile": true,
+  "lost_receipt_retry_same_id": true,
+  "reopen_preserves_uncertain_operation": true,
+  "retry_does_not_increment_revision_twice": true,
+  "name_delete_preserves_other_memory": true,
+  "delete_all_clears_profile_and_experiences": true,
+  "outage_invalidates_displayed_profile": true
+}

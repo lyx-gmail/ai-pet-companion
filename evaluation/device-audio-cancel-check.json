@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "source": "physical_device_silent_Opus_queue_and_real_memory_version_invalidation",
+  "app_sha256": "8aee09930300d01f146ee09451c7a962f108206c301ea6b837b67e02665dd89d",
+  "model_called": false,
+  "acoustic_acceptance": false,
+  "formal_memory_unchanged": true,
+  "physical_switch_contact_verified": false,
+  "queued_audio_discard_observed": true,
+  "discard_samples": [
+    [
+      4,
+      7,
+      2,
+      0
+    ]
+  ],
+  "returned_to_idle": true,
+  "memory_invalidation_closed_connection": true
+}

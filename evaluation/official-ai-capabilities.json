@@ -1,0 +1,16 @@
+{
+  "source": "authenticated_official_console_visible_UI",
+  "date": "2026-10-31",
+  "agent_count": 1,
+  "bound_device_count": 1,
+  "selected_model": "小智 Lite",
+  "native_memory_enabled": true,
+  "native_memory_entry_count": 0,
+  "custom_role_control_present": true,
+  "MCP_endpoint_control_present": true,
+  "MCP_endpoint_connected": false,
+  "role_or_model_settings_saved_by_agent": false,
+  "endpoint_address_recorded": false,
+  "official_model_tool_call_verified": false,
+  "physical_device_switched_to_official_AI": false
+}

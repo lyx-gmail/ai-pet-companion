@@ -1,0 +1,15 @@
+{
+  "slot": "ota_0",
+  "offset": 131072,
+  "size": 4128768,
+  "ota_sequence": 1,
+  "app_bytes": 2721952,
+  "app_sha256": "f6405483214142a4e8febc0a339d2ae17662697d8ec58530956d2f6228d5cf22",
+  "backup_sha256": "78817c71c4e870748fcf661d6453173e3e037fa3139a4823fd9fb6ed13c9301b",
+  "rollback_app_sha256": "c09d149c8ef3337dcfa3a9ee2fd772b8365a18394eb8f19cf119065146b6e20c",
+  "write_started": true,
+  "written": true,
+  "protected_before_verified": true,
+  "protected_after_verified": true,
+  "app_readback_verified": true
+}

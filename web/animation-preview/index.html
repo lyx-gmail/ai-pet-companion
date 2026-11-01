@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 宠物 · 动画选型预览</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#141719;color:#e9edf0}*{box-sizing:border-box}body{max-width:1120px;margin:auto;padding:36px 24px}h1{font-size:27px;margin:0 0 12px}p{color:#b0bbc4;line-height:1.75}a{color:#94d9e1}.layout{display:grid;grid-template-columns:minmax(240px,480px) 1fr;gap:36px;margin:28px 0}.face{width:100%;height:auto;aspect-ratio:1;background:black;display:block;border-radius:24px}.choices{display:flex;flex-wrap:wrap;gap:9px}button{border:1px solid #42515a;background:#22292e;color:inherit;padding:11px 15px;border-radius:9px;font:inherit;cursor:pointer}button[aria-pressed=true]{border-color:#95e3cf;background:#1a3c34}button:focus-visible,a:focus-visible{outline:3px solid #95e3cf;outline-offset:3px}.label{font-size:22px;color:#e9edf0}.small{font-size:13px}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px}.gallery figure{margin:0}.gallery img{display:block;width:100%;height:auto;background:black;border-radius:12px}.gallery figcaption{padding:8px 0;color:#b0bbc4}.notice{border-left:3px solid #95e3cf;padding-left:14px}@media(max-width:720px){.layout{grid-template-columns:1fr}.face{max-width:480px;margin:auto}}
+</style>
+<h1>先看它怎样动，再决定它长什么样</h1>
+<p>这是开源原始动画的浏览器预览，供筛选风格。当前展示 Otto v1.4.0 资源；不是已经刷入设备的效果，也不代表实机帧率。</p>
+<div class="layout"><img class="face" id="face" src="assets/neutral.gif" width="240" height="240" alt="待机动画：黑底白色机器人双眼">
+<section aria-label="切换动画"><p class="label" id="label">待机 / neutral</p><div class="choices" id="choices"></div>
+<p>原始画布 240 × 240，和设备分辨率一致。此处只做等比放大，无拉伸或裁切。</p>
+<p class="notice">选型重点：自然眨眼、视线有停留、动作有起落、切换不跳脸。循环素材的重复感和能否及时打断，需要与实时引擎对比。</p>
+<p class="small">资源来源：<a href="https://github.com/txp666/otto-emoji-gif-component">Otto GIF</a> · <a href="OTTO-LICENSE.txt">MIT 许可</a>。当前提交：4a666924e8e4e2bb55fb9d3167211bb936224abf。</p></section></div>
+<h2>一起比较的实时方案</h2>
+<p><a href="https://github.com/FluxGarage/RoboEyes">RoboEyes 官方源码及演示</a>：自动眨眼、随机看向、连续表情过渡，适合长期待机。<br><a href="https://tanmaywankar.github.io/GrobotAnimator/">Grobot 动态编辑器</a>：弹簧运动与非对称眼形，可直接试调；当前默认外观偏圆环。</p>
+<h2>原始资源总览</h2><div class="gallery" id="gallery"></div>
+<script>
+const names={neutral:'待机',happy:'开心',laughing:'大笑',funny:'逗趣',sad:'低落',angry:'生气',crying:'哭泣',loving:'喜欢',embarrassed:'害羞',surprised:'惊讶',shocked:'吓一跳',thinking:'思考',winking:'眨单眼',cool:'酷',relaxed:'放松',delicious:'进食',kissy:'亲近',confident:'得意',sleepy:'困倦',silly:'淘气',confused:'疑惑'};
+const primary=['neutral','happy','delicious','sleepy','thinking','loving','confused','surprised'];
+for(const key of primary){const b=document.createElement('button');b.textContent=names[key];b.setAttribute('aria-pressed',String(key==='neutral'));b.onclick=()=>{document.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');face.src=`assets/${key}.gif`;face.alt=`${names[key]}动画`;label.textContent=`${names[key]} / ${key}`};choices.append(b)}
+for(const [key,name] of Object.entries(names)){const f=document.createElement('figure'),im=document.createElement('img'),c=document.createElement('figcaption');im.src=`assets/${key}.gif`;im.alt=`${name}动画`;im.loading='lazy';im.width=240;im.height=240;c.textContent=`${name} / ${key}`;f.append(im,c);gallery.append(f)}
+</script></html>

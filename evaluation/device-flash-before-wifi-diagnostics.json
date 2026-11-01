@@ -1,0 +1,16 @@
+{
+  "slot": "ota_0",
+  "offset": 131072,
+  "size": 4128768,
+  "ota_sequence": 1,
+  "app_bytes": 2727472,
+  "app_sha256": "744d0009cec29f64b8011d40134ff455f54102e3185be453cd1673dfa7173273",
+  "backup_sha256": "7ca875bac2c8f8376f4d3fe72f30aeeed8578d5281e91cf7ca82b1cef754cae1",
+  "rollback_app_sha256": "5c8fb861d39d129917a9ca8eccd6f982437e76ebea9e1aa05b9eb59d83782b10",
+  "rollback_app_path": ".runtime/flash/rollback-pre-lan-2026-10-31-16mb-app.bin",
+  "write_started": true,
+  "written": true,
+  "protected_before_verified": true,
+  "protected_after_verified": true,
+  "app_readback_verified": true
+}

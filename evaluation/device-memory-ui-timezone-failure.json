@@ -1,0 +1,12 @@
+{
+  "ok": false,
+  "source": "physical_device_menu_HTTP_and_USB_keys_isolated_Node_RAM_database",
+  "app_sha256": "f9df85fbe9710464171cddc85062842e7f887cc3ced761ab05b806724ffc8eff",
+  "formal_memory_unchanged": true,
+  "cloud_model_called": false,
+  "physical_switch_contact_verified": false,
+  "visual_layout_verified": false,
+  "profile_read_verified": true,
+  "error_type": "ValueError",
+  "error_code": "UNEXPECTED_MENU_PHASE_4"
+}

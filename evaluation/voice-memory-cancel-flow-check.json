@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "source": "isolated_RAM_HTTP_pinned_ConnectionHandler_TTS_queues_real_loopback_WebSocket",
+  "model_called": false,
+  "audio_stream_generated": false,
+  "hardware_verified": false,
+  "cases": [
+    {
+      "operation": "set",
+      "close_code": 1000,
+      "observed_seconds": 0.515,
+      "queues_empty": true,
+      "personal_history_cleared": true,
+      "watch_task_stopped": true
+    },
+    {
+      "operation": "delete",
+      "close_code": 1000,
+      "observed_seconds": 0.515,
+      "queues_empty": true,
+      "personal_history_cleared": true,
+      "watch_task_stopped": true
+    }
+  ],
+  "formal_memory_unchanged": true
+}

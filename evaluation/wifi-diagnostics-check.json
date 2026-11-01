@@ -1,0 +1,11 @@
+{
+  "disconnect_reasons": [],
+  "diagnostic_observed": false,
+  "station_got_ip": true,
+  "observer_attach_failed": false,
+  "crash_observed": false,
+  "source": "physical_COM4_serial",
+  "capture_seconds": 50,
+  "captured_at": "2026-10-31T14:20:31.880014+00:00",
+  "app_sha256": "4c3866edba146f2609e6bf016cd25aef9fa732704437865234a203942c2c4026"
+}

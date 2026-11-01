@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "software_tests_run": 20,
+  "software_tests_passed": 20,
+  "live_backend_mode": "local",
+  "cloud_model_called": false,
+  "physical_cloud_care_verified": false,
+  "physical_memory_confirmation_verified": false,
+  "files": {
+    "backend/pet_official_proxy.py": "03efc2f34f7359f4e1b70bbdd007408102b3f68fc04af9b02d4e60c31ff4b734",
+    "backend/pet_official_memory.py": "8739571391e1dd48d0e4fd0c7421a5661ef14ca806c87069beba92fcc8465260",
+    "scripts/voice_pet_patch.py": "0d866a2503524a5b2d0e46522dd834a8b802470fc94ec8fa276ad5f07c6f3ab8",
+    "scripts/prepare-voice.py": "7fb73614f291143626e20c003524d867a72d401c59dd39c35cad3ecc227c88f1"
+  },
+  "live_invalid_HMAC_rejected": true,
+  "live_wrong_device_rejected": true
+}

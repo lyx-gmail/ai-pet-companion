@@ -1,0 +1,17 @@
+{
+  "ok": false,
+  "source": "official_AI_PC_protocol_session_with_fresh_physical_USB_tool",
+  "physical_device_backend_changed": false,
+  "device_write_commands_sent": false,
+  "hardware_ASR_verified": false,
+  "acoustic_playback_verified": false,
+  "hello_received": true,
+  "tools_discovered": true,
+  "query_sent": true,
+  "tool_called": false,
+  "actual_device_states_read": 0,
+  "reply_text_received": false,
+  "reply_ended": false,
+  "audio_packets_received": 0,
+  "reply_mentions_actual_satiety": false
+}

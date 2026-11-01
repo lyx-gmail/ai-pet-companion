@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-31",
+  "software_client": true,
+  "hardware_voice_verified": false,
+  "non_loopback_connections_blocked": true,
+  "unauthenticated_rejected": true,
+  "authenticated_hello": true,
+  "unbound_ota_rejected": true,
+  "unbound_signed_websocket_rejected": true,
+  "bound_ota_token_used_for_hello": true,
+  "ota_local_ip_fixture": true,
+  "audio_params": {
+    "format": "opus",
+    "sample_rate": 16000,
+    "channels": 1,
+    "frame_duration": 60
+  },
+  "configured_encoder_rate": 16000,
+  "ok": true,
+  "external_connection_attempts": 0
+}

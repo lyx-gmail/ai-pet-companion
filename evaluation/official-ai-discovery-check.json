@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "source": "official_HTTPS_discovery_with_owned_device_identity",
+  "firmware_changed": false,
+  "cloud_model_called": false,
+  "hardware_ASR_verified": false,
+  "http_status": 200,
+  "websocket_config_available": true,
+  "mqtt_config_available": true,
+  "activation_required": false,
+  "firmware_update_offered": false
+}

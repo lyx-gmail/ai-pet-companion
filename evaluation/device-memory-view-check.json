@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "source": "physical_device_memory_menu_HTTP_read_via_USB_key_dispatch",
+  "app_sha256": "27a4f7280af2d016a862530ca50aa494d37bd74b36ef541d95d410b1348fee7d",
+  "delete_requested": false,
+  "formal_memory_unchanged": true,
+  "physical_switch_contact_verified": false,
+  "visual_layout_verified": false,
+  "profile_revision_matched": true,
+  "profile_entry_count": 0,
+  "device_menu_phase": 2,
+  "next_page_navigation_verified": true,
+  "previous_page_navigation_verified": true,
+  "menu_closed": true
+}

@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "source": "real_HTTP_bridge_and_isolated_Node_SQLite",
+  "formal_database_used": false,
+  "cloud_api_called": false,
+  "hardware_verified": false,
+  "pending_does_not_delete": true,
+  "cancel_preserves_profile": true,
+  "stale_revision_rejected": true,
+  "duplicate_confirm_is_idempotent": true,
+  "delete_all_clears_profile_and_experiences": true,
+  "unknown_confirmation_rejected": true,
+  "final_revision": 5
+}

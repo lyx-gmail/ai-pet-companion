@@ -1,0 +1,42 @@
+{
+  "source": "actual_device_protocol_text_and_USB_key_dispatch",
+  "isolated_memory_fixture": true,
+  "real_llm_extraction": true,
+  "hardware_ASR_verified": false,
+  "physical_switch_contact_verified": false,
+  "hardware_acoustic_playback_verified": false,
+  "cases": [
+    {
+      "decision": "main",
+      "prompt_presented": true,
+      "revision_before": 0,
+      "revision_after": 1,
+      "pending_cleared": true,
+      "confirmed_name_matches_fixture": true,
+      "text_sent_on_device": true,
+      "ok": true
+    },
+    {
+      "decision": "pet",
+      "prompt_presented": true,
+      "revision_before": 1,
+      "revision_after": 1,
+      "pending_cleared": true,
+      "confirmed_name_matches_fixture": true,
+      "text_sent_on_device": true,
+      "ok": true
+    },
+    {
+      "decision": "timeout",
+      "prompt_presented": true,
+      "revision_before": 1,
+      "revision_after": 1,
+      "pending_cleared": true,
+      "confirmed_name_matches_fixture": true,
+      "text_sent_on_device": true,
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "app_sha256": "dc4b1d4972d2c146d696a3656caf02353ccda9f90971f5be6255ab31683b744b"
+}

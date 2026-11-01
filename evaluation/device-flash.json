@@ -1,0 +1,16 @@
+{
+  "slot": "ota_0",
+  "offset": 131072,
+  "size": 4128768,
+  "ota_sequence": 1,
+  "app_bytes": 2743424,
+  "app_sha256": "cb5efaa25c52fb18c0d8827c05862d59a8820c4466afb18a32d5536f890f7d15",
+  "backup_sha256": "1bb041beffd5d1525b2418fe5601034e278e5699ab7279a3a524ed49295e032c",
+  "rollback_app_sha256": "845b8f0f4a4557c4846ab6ccdc2c26951522b3fcc000cdc76c233b8ca4c4ed90",
+  "rollback_app_path": ".runtime/flash/rollback-pre-memory-ui-2026-11-01-16mb-app.bin",
+  "write_started": true,
+  "written": true,
+  "protected_before_verified": true,
+  "protected_after_verified": true,
+  "app_readback_verified": true
+}

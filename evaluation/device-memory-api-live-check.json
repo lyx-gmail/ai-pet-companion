@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "source": "running_project_voice_HTTP_endpoint",
+  "read_only": true,
+  "write_requests_sent": false,
+  "unauthenticated_rejected": true,
+  "authenticated_profile_read": true,
+  "no_store": true,
+  "hardware_verified": false
+}

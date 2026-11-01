@@ -1,0 +1,39 @@
+{
+  "source": "actual_device_model_and_MCP_after_fixed_protocol_text",
+  "hardware_ASR_verified": false,
+  "physical_button_contact_verified": false,
+  "hardware_acoustic_playback_verified": false,
+  "cases": [
+    {
+      "command": "query_state",
+      "text_accepted": true,
+      "rejected_attempts": 0,
+      "receipt": {
+        "tool": "self.pet.get_state",
+        "ok": true,
+        "code": "OK",
+        "satiety": 74,
+        "revision": 4436
+      },
+      "ok": true
+    },
+    {
+      "command": "request_feed",
+      "text_accepted": true,
+      "rejected_attempts": 0,
+      "receipt": {
+        "tool": "self.pet.feed",
+        "ok": false,
+        "code": "BUSY",
+        "delta": 0,
+        "durable": false,
+        "satiety": 74,
+        "revision": 4448
+      },
+      "ok": false
+    }
+  ],
+  "ok": false,
+  "error_type": "RuntimeError",
+  "error_code": "DEVICE_TOOL_RESULT_FAILED"
+}

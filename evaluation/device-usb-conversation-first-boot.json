@@ -1,0 +1,29 @@
+{
+  "source": "physical_native_USB_development_command",
+  "command": "state",
+  "command_dispatched": true,
+  "state": {
+    "ok": true,
+    "satiety": 88,
+    "mood": 81,
+    "energy": 25,
+    "closeness": 50,
+    "relationship_interactions": 2,
+    "relationship_window_seconds": 50325,
+    "relationship_spacing_seconds": 600,
+    "sleeping": false,
+    "sleep_pending": false,
+    "muted": false,
+    "memory_confirmation_pending": false,
+    "feed_cooldown_seconds": 0,
+    "pet_cooldown_seconds": 0,
+    "revision": 7469,
+    "persisted_revision": 7430,
+    "unsaved_changes": true,
+    "time_trusted": true,
+    "offline_catchup_pending": false,
+    "offline_gap_omitted": false
+  },
+  "physical_button_press_verified": false,
+  "ok": true
+}

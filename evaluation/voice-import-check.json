@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "listening": false,
+  "cloud_api_called": false,
+  "hardware_voice_verified": false,
+  "modules_constructed": true,
+  "device_binding_configured": true,
+  "unbound_device_rejected": true,
+  "bound_device_initialization": true,
+  "ok": true
+}

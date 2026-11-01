@@ -1,0 +1,84 @@
+{
+  "source": "user_observation_and_physical_COM4_serial",
+  "user_observation": {
+    "left_short": "eyes curved like a smile",
+    "right_short": "eyes vibrated",
+    "voice_started": false
+  },
+  "mapping": {
+    "left": {
+      "action": "pet",
+      "gpio": 39
+    },
+    "right": {
+      "action": "feed",
+      "gpio": 40
+    }
+  },
+  "serial_capture": {
+    "date": "2026-10-31",
+    "source": "physical_COM4_serial",
+    "observed_pet_runtime": true,
+    "health_samples": [
+      {
+        "revision": 280,
+        "satiety": 70,
+        "mood": 78,
+        "energy": 80,
+        "closeness": 50,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 290,
+        "satiety": 70,
+        "mood": 78,
+        "energy": 80,
+        "closeness": 50,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 301,
+        "satiety": 85,
+        "mood": 78,
+        "energy": 80,
+        "closeness": 50,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 311,
+        "satiety": 85,
+        "mood": 78,
+        "energy": 80,
+        "closeness": 50,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      },
+      {
+        "revision": 321,
+        "satiety": 85,
+        "mood": 78,
+        "energy": 80,
+        "closeness": 50,
+        "sleeping": 0,
+        "sleep_pending": 0,
+        "storage_available": 1
+      }
+    ],
+    "state_ticks_progressing": true,
+    "storage_available": true,
+    "crash_observed": false,
+    "hardware_animation_verified": false,
+    "hardware_audio_verified": false,
+    "ok": true,
+    "capture_seconds": 50,
+    "serial_reconnects": 0
+  },
+  "limits": "First full sample follows first key; no same-capture complete baseline before first key. Long presses and middle key not yet verified."
+}

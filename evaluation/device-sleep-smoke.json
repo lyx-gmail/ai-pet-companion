@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "source": "user_live_confirmation",
+  "requested_sequence": "Hold right about 2 seconds to sleep; wait 12 seconds; short press middle to wake without starting voice.",
+  "user_reply": "正常的",
+  "visual_sleep_and_wake_confirmed": true,
+  "serial_transition_captured": false,
+  "measured_transition_latency_ms": null,
+  "voice_trigger_absence_instrumented": false,
+  "limits": "User confirmation only; the preceding timed serial window contained awake samples and did not capture the transition."
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-01",
+  "ok": true,
+  "source": "ESP32-S3 GCC C++17 constexpr static_assert evaluation",
+  "timeline_check_groups": 3,
+  "checkpoint_check_groups": 5,
+  "checkpoint_bytes": 1228,
+  "event_capacity": 128,
+  "runtime_integrated": true,
+  "hardware_verified": true,
+  "firmware_flashed": true,
+  "hardware_evidence": "evaluation/device-clock-check.json",
+  "hardware_scope": "delayed sync and software-reset persistence, not physical power-loss fault injection"
+}

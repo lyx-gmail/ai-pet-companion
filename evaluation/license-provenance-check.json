@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "licenses": [
+    {
+      "component": "MemoryConstellations",
+      "commit": "85a7deaeb57d13d43b241d00bd892e43ebc1f31c",
+      "license_path": "licenses/MemoryConstellations-LICENSE.txt",
+      "sha256": "83ecc64a3ef574a124c0a70e77a4def48345010d5834fd5bc059b8f5222d2371",
+      "pinned_git_content_verified": true
+    },
+    {
+      "component": "xiaozhi-esp32-server",
+      "commit": "1a095d5bed23e49a17f817c7f378e2a86f298dfc",
+      "license_path": "licenses/xiaozhi-esp32-server-LICENSE.txt",
+      "sha256": "0ce63e9569fc68d7682a9959c5874d11ef1b7ed97f50805ce783bc24d694cd23",
+      "pinned_git_content_verified": true
+    },
+    {
+      "component": "xiaozhi-esp32",
+      "commit": "43ef2f4e7f0957dc62ec7d628ac2819d226127b8",
+      "license_path": "licenses/xiaozhi-esp32-LICENSE.txt",
+      "sha256": "8e43517088915f56edb2c93aa044d490ab28bff4e06a709408c41f705d32d378",
+      "pinned_git_content_verified": true
+    }
+  ],
+  "root_license_selected": true,
+  "root_license_spdx": "GPL-3.0-or-later"
+}

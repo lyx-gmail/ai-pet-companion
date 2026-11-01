@@ -1,0 +1,14 @@
+{
+  "sdk": {
+    "repository": "https://github.com/espressif/esp-idf.git",
+    "tag": "v5.5.1",
+    "commit": "fcae32885b0296b32044cb99ecbdc50d98dddb83"
+  },
+  "firmware": {
+    "repository": "https://github.com/78/xiaozhi-esp32.git",
+    "tag": "v2.0.4",
+    "commit": "43ef2f4e7f0957dc62ec7d628ac2819d226127b8"
+  },
+  "target": "esp32s3",
+  "board": "xingzhi-cube-1.54tft-wifi"
+}

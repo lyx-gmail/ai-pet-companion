@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-31T12:24:40.846811+08:00",
+  "source": "live_local_process_listeners_and_health",
+  "loopback_tcp_ports_reachable": {
+    "8000": true,
+    "8003": true,
+    "8766": true
+  },
+  "memory_healthy": true,
+  "llm_configuration_present": true,
+  "voice_authentication_enabled": true,
+  "device_binding_present": true,
+  "lan_opened": false,
+  "device_endpoint_changed": false,
+  "llm_call_performed_by_check": false,
+  "hardware_voice_verified": false,
+  "limits": "Startup snapshot only; reachability and health do not prove audio, AI actions or device connection."
+}

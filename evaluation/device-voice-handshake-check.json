@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-31",
+  "source": "physical_device_USB_opened_native_voice_channel_and_real_server_log",
+  "device_websocket_session_established": true,
+  "device_states": [
+    "connecting",
+    "listening",
+    "speaking"
+  ],
+  "device_tools_registered": 8,
+  "pet_tools_registered": [
+    "self_pet_feed",
+    "self_pet_get_state",
+    "self_pet_pet",
+    "self_pet_set_sleep"
+  ],
+  "missing_plugin_errors": 0,
+  "tts_missing_executable_errors": 0,
+  "server_first_speech_send_observed": true,
+  "controlled_ASR_test": false,
+  "pet_tool_execution_verified": false,
+  "hardware_acoustic_playback_verified": false,
+  "automatic_exit_dispatches_verified": true,
+  "limits": "Short USB-dispatched opening, then menu entry/exit to cancel and return to pet. A server connection-close error occurred during cancellation; this is not proof of complete TTS playback. Registration does not prove AI care execution."
+}
