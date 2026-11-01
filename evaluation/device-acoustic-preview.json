@@ -1,0 +1,25 @@
+{
+  "source": "computer_default_speaker_to_physical_device_microphone",
+  "fixture_phrase": "请告诉我你现在的饱食度。",
+  "app_sha256": "cb5efaa25c52fb18c0d8827c05862d59a8820c4466afb18a32d5536f890f7d15",
+  "playback_process_started": true,
+  "computer_speech_process_exit_code": 0,
+  "elapsed_seconds": 15.38,
+  "asr_result_count": 1,
+  "fixture_topic_recognized": true,
+  "device_states": [
+    "connecting",
+    "listening",
+    "speaking",
+    "listening",
+    "idle"
+  ],
+  "state_tool_result_observed": true,
+  "device_crash_observed": false,
+  "human_audible_playback_verified": false,
+  "scope": "Uses system default audio output without volume or routing changes; unrelated ambient ASR is not exported.",
+  "asr_exact_fixture_match": false,
+  "asr_fixture_character_similarity": 0.909,
+  "hardware_microphone_to_ASR_verified": true,
+  "ok": true
+}
